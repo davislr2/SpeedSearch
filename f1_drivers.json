@@ -1,0 +1,222 @@
+[
+    {
+        "name": "Max Verstappen",
+        "wins": "61",
+        "poles": "40",
+        "points": "2889.5",
+        "championships": "3",
+        "start_year": "2015",
+        "last_year": "2024",
+        "best_championship_finish": "1"
+    },
+    {
+        "name": "Lando Norris",
+        "wins": "2",
+        "poles": "5",
+        "points": "874",
+        "championships": "0",
+        "start_year": "2019",
+        "last_year": "2024",
+        "best_championship_finish": "2"
+    },
+    {
+        "name": "Charles Leclerc",
+        "wins": "7",
+        "poles": "25",
+        "points": "1291",
+        "championships": "0",
+        "start_year": "2018",
+        "last_year": "2024",
+        "best_championship_finish": "2"
+    },
+    {
+        "name": "Oscar Piastri",
+        "wins": "1",
+        "poles": "0",
+        "points": "294",
+        "championships": "0",
+        "start_year": "2023",
+        "last_year": "2024",
+        "best_championship_finish": "4"
+    },
+    {
+        "name": "Carlos Sainz",
+        "wins": "3",
+        "poles": "5",
+        "points": "1166.5",
+        "championships": "0",
+        "start_year": "2015",
+        "last_year": "2024",
+        "best_championship_finish": "5"
+    },
+    {
+        "name": "Lewis Hamilton",
+        "wins": "105",
+        "poles": "104",
+        "points": "4803.5",
+        "championships": "7",
+        "start_year": "2007",
+        "last_year": "2024",
+        "best_championship_finish": "1"
+    },
+    {
+        "name": "Sergio P\u00e9rez",
+        "wins": "6",
+        "poles": "3",
+        "points": "1629",
+        "championships": "0",
+        "start_year": "2011",
+        "last_year": "2024",
+        "best_championship_finish": "2"
+    },
+    {
+        "name": "George Russell",
+        "wins": "2",
+        "poles": "4",
+        "points": "597",
+        "championships": "0",
+        "start_year": "2019",
+        "last_year": "2024",
+        "best_championship_finish": "4"
+    },
+    {
+        "name": "Fernando Alonso",
+        "wins": "32",
+        "poles": "22",
+        "points": "2317",
+        "championships": "2",
+        "start_year": "2001",
+        "last_year": "2024",
+        "best_championship_finish": "1"
+    },
+    {
+        "name": "Lance Stroll",
+        "wins": "0",
+        "poles": "1",
+        "points": "292",
+        "championships": "0",
+        "start_year": "2017",
+        "last_year": "2024",
+        "best_championship_finish": "10"
+    },
+    {
+        "name": "Nico H\u00fclkenberg",
+        "wins": "0",
+        "poles": "1",
+        "points": "552",
+        "championships": "0",
+        "start_year": "2010",
+        "last_year": "2024",
+        "best_championship_finish": "7"
+    },
+    {
+        "name": "Yuki Tsunoda",
+        "wins": "0",
+        "poles": "0",
+        "points": "83",
+        "championships": "0",
+        "start_year": "2021",
+        "last_year": "2024",
+        "best_championship_finish": "12"
+    },
+    {
+        "name": "Daniel Ricciardo",
+        "wins": "8",
+        "poles": "3",
+        "points": "1329",
+        "championships": "0",
+        "start_year": "2011",
+        "last_year": "2024",
+        "best_championship_finish": "3"
+    },
+    {
+        "name": "Pierre Gasly",
+        "wins": "1",
+        "poles": "0",
+        "points": "402",
+        "championships": "0",
+        "start_year": "2017",
+        "last_year": "2024",
+        "best_championship_finish": "7"
+    },
+    {
+        "name": "Ollie Bearman",
+        "wins": "0",
+        "poles": "0",
+        "points": "6",
+        "championships": "0",
+        "start_year": "2024",
+        "last_year": "2024",
+        "best_championship_finish": "15"
+    },
+    {
+        "name": "Kevin Magnussen",
+        "wins": "0",
+        "poles": "0",
+        "points": "192",
+        "championships": "0",
+        "start_year": "2014",
+        "last_year": "2024",
+        "best_championship_finish": "9"
+    },
+    {
+        "name": "Alexander Albon",
+        "wins": "0",
+        "poles": "0",
+        "points": "234",
+        "championships": "0",
+        "start_year": "2019",
+        "last_year": "2024",
+        "best_championship_finish": "7"
+    },
+    {
+        "name": "Esteban Ocon",
+        "wins": "1",
+        "poles": "0",
+        "points": "427",
+        "championships": "0",
+        "start_year": "2016",
+        "last_year": "2024",
+        "best_championship_finish": "8"
+    },
+    {
+        "name": "Zhou Guanyu",
+        "wins": "0",
+        "poles": "0",
+        "points": "12",
+        "championships": "0",
+        "start_year": "2022",
+        "last_year": "2024",
+        "best_championship_finish": "18"
+    },
+    {
+        "name": "Logan Sargeant",
+        "wins": "0",
+        "poles": "0",
+        "points": "1",
+        "championships": "0",
+        "start_year": "2023",
+        "last_year": "2024",
+        "best_championship_finish": "20"
+    },
+    {
+        "name": "Franco Colapinto",
+        "wins": "0",
+        "poles": "0",
+        "points": "0",
+        "championships": "0",
+        "start_year": "2024",
+        "last_year": "2024",
+        "best_championship_finish": "21"
+    },
+    {
+        "name": "Valtteri Bottas",
+        "wins": "10",
+        "poles": "20",
+        "points": "1797",
+        "championships": "0",
+        "start_year": "2013",
+        "last_year": "2024",
+        "best_championship_finish": "2"
+    }
+]
