@@ -1,0 +1,952 @@
+[
+    {
+        "name": "AGS",
+        "points": 2.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 1986,
+        "end_year": 1991,
+        "championships": 0,
+        "best_championship_position": 12
+    },
+    {
+        "name": "ALFA ROMEO",
+        "points": 199.0,
+        "wins": 10,
+        "poles": 12,
+        "start_year": 1950,
+        "end_year": 2023,
+        "championships": 0,
+        "best_championship_position": 6
+    },
+    {
+        "name": "ALPHATAURI",
+        "points": 309.0,
+        "wins": 1,
+        "poles": 0,
+        "start_year": 2020,
+        "end_year": 2023,
+        "championships": 0,
+        "best_championship_position": 6
+    },
+    {
+        "name": "ALPINE",
+        "points": 461.0,
+        "wins": 1,
+        "poles": 0,
+        "start_year": 2021,
+        "end_year": 2024,
+        "championships": 0,
+        "best_championship_position": 4
+    },
+    {
+        "name": "AGS",
+        "points": 2.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 1986,
+        "end_year": 1991,
+        "championships": 0,
+        "best_championship_position": 12
+    },
+    {
+        "name": "ALFA ROMEO",
+        "points": 199.0,
+        "wins": 10,
+        "poles": 12,
+        "start_year": 1950,
+        "end_year": 2023,
+        "championships": 0,
+        "best_championship_position": 6
+    },
+    {
+        "name": "ALPHATAURI",
+        "points": 309.0,
+        "wins": 1,
+        "poles": 0,
+        "start_year": 2020,
+        "end_year": 2023,
+        "championships": 0,
+        "best_championship_position": 6
+    },
+    {
+        "name": "ALPINE",
+        "points": 461.0,
+        "wins": 1,
+        "poles": 0,
+        "start_year": 2021,
+        "end_year": 2024,
+        "championships": 0,
+        "best_championship_position": 4
+    },
+    {
+        "name": "ARROWS",
+        "points": 142.0,
+        "wins": 0,
+        "poles": 1,
+        "start_year": 1978,
+        "end_year": 2002,
+        "championships": 0,
+        "best_championship_position": 5
+    },
+    {
+        "name": "ASTON MARTIN",
+        "points": 494.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 1959,
+        "end_year": 2024,
+        "championships": 0,
+        "best_championship_position": 5
+    },
+    {
+        "name": "ATS",
+        "points": 7.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 1978,
+        "end_year": 1984,
+        "championships": 0,
+        "best_championship_position": 11
+    },
+    {
+        "name": "BAR",
+        "points": 227.0,
+        "wins": 0,
+        "poles": 2,
+        "start_year": 1999,
+        "end_year": 2005,
+        "championships": 0,
+        "best_championship_position": 2
+    },
+    {
+        "name": "BENETTON",
+        "points": 851.5,
+        "wins": 27,
+        "poles": 15,
+        "start_year": 1986,
+        "end_year": 2001,
+        "championships": 1,
+        "best_championship_position": 1
+    },
+    {
+        "name": "BMW SAUBER",
+        "points": 352.0,
+        "wins": 1,
+        "poles": 1,
+        "start_year": 2006,
+        "end_year": 2010,
+        "championships": 0,
+        "best_championship_position": 2
+    },
+    {
+        "name": "BRABHAM",
+        "points": 864.0,
+        "wins": 35,
+        "poles": 39,
+        "start_year": 1962,
+        "end_year": 1992,
+        "championships": 2,
+        "best_championship_position": 1
+    },
+    {
+        "name": "BRAWN GP",
+        "points": 172.0,
+        "wins": 8,
+        "poles": 5,
+        "start_year": 2009,
+        "end_year": 2009,
+        "championships": 1,
+        "best_championship_position": 1
+    },
+    {
+        "name": "BRM",
+        "points": 433.0,
+        "wins": 17,
+        "poles": 11,
+        "start_year": 1951,
+        "end_year": 1977,
+        "championships": 1,
+        "best_championship_position": 1
+    },
+    {
+        "name": "BRP",
+        "points": 11.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 1963,
+        "end_year": 1964,
+        "championships": 0,
+        "best_championship_position": 6
+    },
+    {
+        "name": "CATERHAM",
+        "points": 0.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 2012,
+        "end_year": 2014,
+        "championships": 0,
+        "best_championship_position": 10
+    },
+    {
+        "name": "COLONI",
+        "points": 0.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 1987,
+        "end_year": 1989,
+        "championships": 0,
+        "best_championship_position": 10
+    },
+    {
+        "name": "CONNAUGHT",
+        "points": 0.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 1952,
+        "end_year": 1959,
+        "championships": 0,
+        "best_championship_position": 10
+    },
+    {
+        "name": "COOPER",
+        "points": 342.0,
+        "wins": 16,
+        "poles": 11,
+        "start_year": 1950,
+        "end_year": 1969,
+        "championships": 2,
+        "best_championship_position": 1
+    },
+    {
+        "name": "COPERSUCAR",
+        "points": 32.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 1975,
+        "end_year": 1979,
+        "championships": 0,
+        "best_championship_position": 7
+    },
+    {
+        "name": "DALLARA",
+        "points": 15.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 1988,
+        "end_year": 1992,
+        "championships": 0,
+        "best_championship_position": 8
+    },
+    {
+        "name": "DE TOMASO",
+        "points": 0.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 1961,
+        "end_year": 1970,
+        "championships": 0,
+        "best_championship_position": 8
+    },
+    {
+        "name": "EAGLE",
+        "points": 17.0,
+        "wins": 1,
+        "poles": 0,
+        "start_year": 1966,
+        "end_year": 1969,
+        "championships": 0,
+        "best_championship_position": 7
+    },
+    {
+        "name": "ENSIGN",
+        "points": 19.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 1973,
+        "end_year": 1982,
+        "championships": 0,
+        "best_championship_position": 10
+    },
+    {
+        "name": "EUROBRUN",
+        "points": 0.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 1988,
+        "end_year": 1990,
+        "championships": 0,
+        "best_championship_position": 10
+    },
+    {
+        "name": "FITTIPALDI",
+        "points": 12.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 1980,
+        "end_year": 1982,
+        "championships": 0,
+        "best_championship_position": 8
+    },
+    {
+        "name": "FONDMETAL",
+        "points": 0.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 1991,
+        "end_year": 1992,
+        "championships": 0,
+        "best_championship_position": 8
+    },
+    {
+        "name": "FOOTWORK",
+        "points": 25.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 1991,
+        "end_year": 1996,
+        "championships": 0,
+        "best_championship_position": 7
+    },
+    {
+        "name": "FORCE INDIA",
+        "points": 1.0,
+        "wins": 0,
+        "poles": 1,
+        "start_year": 2008,
+        "end_year": 2018,
+        "championships": 0,
+        "best_championship_position": 4
+    },
+    {
+        "name": "FORTI",
+        "points": 0.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 1995,
+        "end_year": 1996,
+        "championships": 0,
+        "best_championship_position": 4
+    },
+    {
+        "name": "GORDINI",
+        "points": 0.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 1952,
+        "end_year": 1956,
+        "championships": 0,
+        "best_championship_position": 4
+    },
+    {
+        "name": "HAAS",
+        "points": 278.0,
+        "wins": 0,
+        "poles": 1,
+        "start_year": 2016,
+        "end_year": 2024,
+        "championships": 0,
+        "best_championship_position": 5
+    },
+    {
+        "name": "HESKETH",
+        "points": 48.0,
+        "wins": 1,
+        "poles": 0,
+        "start_year": 1974,
+        "end_year": 1978,
+        "championships": 0,
+        "best_championship_position": 4
+    },
+    {
+        "name": "HILL",
+        "points": 3.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 1975,
+        "end_year": 1975,
+        "championships": 0,
+        "best_championship_position": 11
+    },
+    {
+        "name": "HONDA",
+        "points": 154.0,
+        "wins": 3,
+        "poles": 2,
+        "start_year": 1964,
+        "end_year": 2008,
+        "championships": 0,
+        "best_championship_position": 4
+    },
+    {
+        "name": "HRT",
+        "points": 0.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 2010,
+        "end_year": 2012,
+        "championships": 0,
+        "best_championship_position": 11
+    },
+    {
+        "name": "HWM",
+        "points": 0.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 1951,
+        "end_year": 1954,
+        "championships": 0,
+        "best_championship_position": 11
+    },
+    {
+        "name": "ISO-MARLBORO",
+        "points": 6.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 1973,
+        "end_year": 1974,
+        "championships": 0,
+        "best_championship_position": 10
+    },
+    {
+        "name": "JAGUAR",
+        "points": 49.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 2000,
+        "end_year": 2004,
+        "championships": 0,
+        "best_championship_position": 7
+    },
+    {
+        "name": "JORDAN",
+        "points": 291.0,
+        "wins": 4,
+        "poles": 2,
+        "start_year": 1991,
+        "end_year": 2005,
+        "championships": 0,
+        "best_championship_position": 3
+    },
+    {
+        "name": "KICK SAUBER",
+        "points": 0.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 2024,
+        "end_year": 2024,
+        "championships": 0,
+        "best_championship_position": 10
+    },
+    {
+        "name": "KURTIS KRAFT",
+        "points": 0.0,
+        "wins": 5,
+        "poles": 6,
+        "start_year": 1950,
+        "end_year": 1960,
+        "championships": 0,
+        "best_championship_position": 10
+    },
+    {
+        "name": "KUZMA",
+        "points": 0.0,
+        "wins": 1,
+        "poles": 0,
+        "start_year": 1951,
+        "end_year": 1960,
+        "championships": 0,
+        "best_championship_position": 10
+    },
+    {
+        "name": "LARROUSSE",
+        "points": 5.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 1993,
+        "end_year": 1994,
+        "championships": 0,
+        "best_championship_position": 10
+    },
+    {
+        "name": "LEYTON HOUSE",
+        "points": 8.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 1990,
+        "end_year": 1991,
+        "championships": 0,
+        "best_championship_position": 7
+    },
+    {
+        "name": "LIGIER",
+        "points": 388.0,
+        "wins": 9,
+        "poles": 9,
+        "start_year": 1976,
+        "end_year": 1996,
+        "championships": 0,
+        "best_championship_position": 2
+    },
+    {
+        "name": "LOLA",
+        "points": 43.0,
+        "wins": 0,
+        "poles": 1,
+        "start_year": 1962,
+        "end_year": 1993,
+        "championships": 0,
+        "best_championship_position": 4
+    },
+    {
+        "name": "LOTUS",
+        "points": 2.0,
+        "wins": 81,
+        "poles": 107,
+        "start_year": 1958,
+        "end_year": 2015,
+        "championships": 7,
+        "best_championship_position": 1
+    },
+    {
+        "name": "MANOR",
+        "points": 1.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 2016,
+        "end_year": 2016,
+        "championships": 0,
+        "best_championship_position": 11
+    },
+    {
+        "name": "MARCH",
+        "points": 173.5,
+        "wins": 3,
+        "poles": 5,
+        "start_year": 1970,
+        "end_year": 1992,
+        "championships": 0,
+        "best_championship_position": 3
+    },
+    {
+        "name": "MARUSSIA",
+        "points": 2.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 2012,
+        "end_year": 2015,
+        "championships": 0,
+        "best_championship_position": 9
+    },
+    {
+        "name": "MASERATI",
+        "points": 6.0,
+        "wins": 9,
+        "poles": 10,
+        "start_year": 1950,
+        "end_year": 1960,
+        "championships": 0,
+        "best_championship_position": 5
+    },
+    {
+        "name": "MATRA",
+        "points": 163.0,
+        "wins": 9,
+        "poles": 4,
+        "start_year": 1967,
+        "end_year": 1972,
+        "championships": 1,
+        "best_championship_position": 1
+    },
+    {
+        "name": "MCLAREN",
+        "points": 6.0,
+        "wins": 187,
+        "poles": 160,
+        "start_year": 1966,
+        "end_year": 2024,
+        "championships": 8,
+        "best_championship_position": 1
+    },
+    {
+        "name": "MERCEDES",
+        "points": 7.0,
+        "wins": 128,
+        "poles": 139,
+        "start_year": 1954,
+        "end_year": 2024,
+        "championships": 8,
+        "best_championship_position": 1
+    },
+    {
+        "name": "MERZARIO",
+        "points": 0.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 1978,
+        "end_year": 1979,
+        "championships": 0,
+        "best_championship_position": 1
+    },
+    {
+        "name": "MIDLAND",
+        "points": 0.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 2006,
+        "end_year": 2006,
+        "championships": 0,
+        "best_championship_position": 10
+    },
+    {
+        "name": "MINARDI",
+        "points": 38.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 1985,
+        "end_year": 2005,
+        "championships": 0,
+        "best_championship_position": 7
+    },
+    {
+        "name": "ONYX",
+        "points": 6.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 1989,
+        "end_year": 1990,
+        "championships": 0,
+        "best_championship_position": 10
+    },
+    {
+        "name": "OSELLA",
+        "points": 5.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 1980,
+        "end_year": 1990,
+        "championships": 0,
+        "best_championship_position": 12
+    },
+    {
+        "name": "PACIFIC",
+        "points": 0.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 1994,
+        "end_year": 1995,
+        "championships": 0,
+        "best_championship_position": 12
+    },
+    {
+        "name": "PARNELLI",
+        "points": 6.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 1974,
+        "end_year": 1976,
+        "championships": 0,
+        "best_championship_position": 10
+    },
+    {
+        "name": "PENSKE",
+        "points": 23.0,
+        "wins": 1,
+        "poles": 0,
+        "start_year": 1974,
+        "end_year": 1977,
+        "championships": 0,
+        "best_championship_position": 5
+    },
+    {
+        "name": "PORSCHE",
+        "points": 48.0,
+        "wins": 1,
+        "poles": 1,
+        "start_year": 1958,
+        "end_year": 1964,
+        "championships": 0,
+        "best_championship_position": 3
+    },
+    {
+        "name": "PROST",
+        "points": 35.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 1997,
+        "end_year": 2001,
+        "championships": 0,
+        "best_championship_position": 6
+    },
+    {
+        "name": "RACING POINT",
+        "points": 268.0,
+        "wins": 1,
+        "poles": 1,
+        "start_year": 2019,
+        "end_year": 2020,
+        "championships": 0,
+        "best_championship_position": 4
+    },
+    {
+        "name": "RAM",
+        "points": 0.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 1984,
+        "end_year": 1985,
+        "championships": 0,
+        "best_championship_position": 4
+    },
+    {
+        "name": "RB",
+        "points": 34.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 2024,
+        "end_year": 2024,
+        "championships": 0,
+        "best_championship_position": 6
+    },
+    {
+        "name": "RED BULL",
+        "points": 7.0,
+        "wins": 120,
+        "poles": 103,
+        "start_year": 2005,
+        "end_year": 2024,
+        "championships": 6,
+        "best_championship_position": 1
+    },
+    {
+        "name": "RENAULT",
+        "points": 1.0,
+        "wins": 35,
+        "poles": 51,
+        "start_year": 1977,
+        "end_year": 2020,
+        "championships": 2,
+        "best_championship_position": 1
+    },
+    {
+        "name": "RIAL",
+        "points": 6.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 1988,
+        "end_year": 1989,
+        "championships": 0,
+        "best_championship_position": 9
+    },
+    {
+        "name": "SAUBER",
+        "points": 513.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 1993,
+        "end_year": 2018,
+        "championships": 0,
+        "best_championship_position": 4
+    },
+    {
+        "name": "SHADOW",
+        "points": 67.5,
+        "wins": 1,
+        "poles": 3,
+        "start_year": 1973,
+        "end_year": 1980,
+        "championships": 0,
+        "best_championship_position": 6
+    },
+    {
+        "name": "SIMCA GORDINI",
+        "points": 0.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 1950,
+        "end_year": 1953,
+        "championships": 0,
+        "best_championship_position": 6
+    },
+    {
+        "name": "SIMTEK",
+        "points": 0.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 1994,
+        "end_year": 1995,
+        "championships": 0,
+        "best_championship_position": 6
+    },
+    {
+        "name": "SPIRIT",
+        "points": 0.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 1983,
+        "end_year": 1985,
+        "championships": 0,
+        "best_championship_position": 6
+    },
+    {
+        "name": "SPYKER",
+        "points": 1.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 2007,
+        "end_year": 2007,
+        "championships": 0,
+        "best_championship_position": 10
+    },
+    {
+        "name": "STEWART",
+        "points": 47.0,
+        "wins": 1,
+        "poles": 1,
+        "start_year": 1997,
+        "end_year": 1999,
+        "championships": 0,
+        "best_championship_position": 4
+    },
+    {
+        "name": "SUPER AGURI",
+        "points": 4.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 2006,
+        "end_year": 2008,
+        "championships": 0,
+        "best_championship_position": 9
+    },
+    {
+        "name": "SURTEES",
+        "points": 53.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 1970,
+        "end_year": 1978,
+        "championships": 0,
+        "best_championship_position": 5
+    },
+    {
+        "name": "TALBOT LAGO",
+        "points": 0.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 1950,
+        "end_year": 1951,
+        "championships": 0,
+        "best_championship_position": 5
+    },
+    {
+        "name": "TECNO",
+        "points": 1.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 1972,
+        "end_year": 1973,
+        "championships": 0,
+        "best_championship_position": 11
+    },
+    {
+        "name": "THEODORE",
+        "points": 2.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 1978,
+        "end_year": 1983,
+        "championships": 0,
+        "best_championship_position": 12
+    },
+    {
+        "name": "TOLEMAN",
+        "points": 26.0,
+        "wins": 0,
+        "poles": 1,
+        "start_year": 1981,
+        "end_year": 1985,
+        "championships": 0,
+        "best_championship_position": 7
+    },
+    {
+        "name": "TORO ROSSO",
+        "points": 500.0,
+        "wins": 1,
+        "poles": 1,
+        "start_year": 2006,
+        "end_year": 2019,
+        "championships": 0,
+        "best_championship_position": 6
+    },
+    {
+        "name": "TOYOTA",
+        "points": 278.5,
+        "wins": 0,
+        "poles": 3,
+        "start_year": 2002,
+        "end_year": 2009,
+        "championships": 0,
+        "best_championship_position": 4
+    },
+    {
+        "name": "TYRRELL",
+        "points": 621.0,
+        "wins": 23,
+        "poles": 14,
+        "start_year": 1970,
+        "end_year": 1998,
+        "championships": 1,
+        "best_championship_position": 1
+    },
+    {
+        "name": "VANWALL",
+        "points": 57.0,
+        "wins": 9,
+        "poles": 7,
+        "start_year": 1954,
+        "end_year": 1960,
+        "championships": 1,
+        "best_championship_position": 1
+    },
+    {
+        "name": "VENTURI",
+        "points": 1.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 1992,
+        "end_year": 1992,
+        "championships": 0,
+        "best_championship_position": 13
+    },
+    {
+        "name": "VIRGIN",
+        "points": 0.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 2010,
+        "end_year": 2011,
+        "championships": 0,
+        "best_championship_position": 12
+    },
+    {
+        "name": "WILLIAMS",
+        "points": 3.0,
+        "wins": 114,
+        "poles": 128,
+        "start_year": 1975,
+        "end_year": 2024,
+        "championships": 9,
+        "best_championship_position": 1
+    },
+    {
+        "name": "WOLF",
+        "points": 79.0,
+        "wins": 3,
+        "poles": 1,
+        "start_year": 1977,
+        "end_year": 1979,
+        "championships": 0,
+        "best_championship_position": 4
+    }
+]

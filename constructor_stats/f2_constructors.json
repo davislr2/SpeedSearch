@@ -1,0 +1,202 @@
+[
+    {
+        "name": "ARDEN INTERNATIONAL",
+        "wins": 4,
+        "poles": 6,
+        "points": 243.0,
+        "start_year": 2017,
+        "end_year": 2019,
+        "championships": 0,
+        "best_championship_position": 7
+    },
+    {
+        "name": "ART GRAND PRIX",
+        "wins": 27,
+        "poles": 28,
+        "points": 2034.0,
+        "start_year": 2017,
+        "end_year": 2024,
+        "championships": 1,
+        "best_championship_position": 1
+    },
+    {
+        "name": "CAMPOS RACING",
+        "wins": 8,
+        "poles": 11,
+        "points": 826.5,
+        "start_year": 2017,
+        "end_year": 2024,
+        "championships": 0,
+        "best_championship_position": 2
+    },
+    {
+        "name": "DAMS",
+        "wins": 22,
+        "poles": 17,
+        "points": 1792.5,
+        "start_year": 2017,
+        "end_year": 2024,
+        "championships": 1,
+        "best_championship_position": 1
+    },
+    {
+        "name": "HITECH PULSE-EIGHT",
+        "wins": 12,
+        "poles": 17,
+        "points": 974.0,
+        "start_year": 2020,
+        "end_year": 2024,
+        "championships": 0,
+        "best_championship_position": 4
+    },
+    {
+        "name": "HWA RACELAB",
+        "wins": 0,
+        "poles": 1,
+        "points": 22.0,
+        "start_year": 2020,
+        "end_year": 2021,
+        "championships": 0,
+        "best_championship_position": 10
+    },
+    {
+        "name": "INVICTA RACING",
+        "wins": 3,
+        "poles": 5,
+        "points": 243.5,
+        "start_year": 2024,
+        "end_year": 2024,
+        "championships": 0,
+        "best_championship_position": 1
+    },
+    {
+        "name": "MP MOTORSPORT",
+        "wins": 14,
+        "poles": 17,
+        "points": 1166.5,
+        "start_year": 2017,
+        "end_year": 2024,
+        "championships": 1,
+        "best_championship_position": 1
+    },
+    {
+        "name": "PHM AIX RACING",
+        "wins": 2,
+        "poles": 1,
+        "points": 79.0,
+        "start_year": 2024,
+        "end_year": 2024,
+        "championships": 0,
+        "best_championship_position": 10
+    },
+    {
+        "name": "PHM RACING BY CHAROUZ",
+        "wins": 2,
+        "poles": 2,
+        "points": 510.0,
+        "start_year": 2018,
+        "end_year": 2023,
+        "championships": 0,
+        "best_championship_position": 6
+    },
+    {
+        "name": "RODIN CARLIN",
+        "wins": 18,
+        "poles": 14,
+        "points": 1680.5,
+        "start_year": 2018,
+        "end_year": 2023,
+        "championships": 1,
+        "best_championship_position": 1
+    },
+    {
+        "name": "PREMA RACING",
+        "wins": 43,
+        "poles": 28,
+        "points": 2247.5,
+        "start_year": 2017,
+        "end_year": 2024,
+        "championships": 2,
+        "best_championship_position": 1
+    },
+    {
+        "name": "RACING ENGINEERING",
+        "wins": 0,
+        "poles": 1,
+        "points": 87.0,
+        "start_year": 2017,
+        "end_year": 2017,
+        "championships": 0,
+        "best_championship_position": 8
+    },
+    {
+        "name": "RAPAX",
+        "wins": 1,
+        "poles": 1,
+        "points": 137.0,
+        "start_year": 2017,
+        "end_year": 2017,
+        "championships": 0,
+        "best_championship_position": 5
+    },
+    {
+        "name": "RODIN MOTORSPORT",
+        "wins": 2,
+        "poles": 1,
+        "points": 164.0,
+        "start_year": 2024,
+        "end_year": 2024,
+        "championships": 0,
+        "best_championship_position": 5
+    },
+    {
+        "name": "RUSSIAN TIME",
+        "wins": 10,
+        "poles": 7,
+        "points": 629.0,
+        "start_year": 2017,
+        "end_year": 2018,
+        "championships": 1,
+        "best_championship_position": 1
+    },
+    {
+        "name": "SAUBER JUNIOR TEAM BY CHAROUZ",
+        "wins": 0,
+        "poles": 3,
+        "points": 110.0,
+        "start_year": 2019,
+        "end_year": 2019,
+        "championships": 0,
+        "best_championship_position": 6
+    },
+    {
+        "name": "TRIDENT",
+        "wins": 3,
+        "poles": 10,
+        "points": 358.0,
+        "start_year": 2017,
+        "end_year": 2024,
+        "championships": 0,
+        "best_championship_position": 9
+    },
+    {
+        "name": "VAN AMERSFOORT RACING",
+        "wins": 2,
+        "poles": 4,
+        "points": 268.0,
+        "start_year": 2022,
+        "end_year": 2024,
+        "championships": 0,
+        "best_championship_position": 7
+    },
+    {
+        "name": "VIRTUOSI RACING",
+        "wins": 18,
+        "poles": 20,
+        "points": 1297.5,
+        "start_year": 2019,
+        "end_year": 2023,
+        "championships": 0,
+        "best_championship_position": 2
+    }
+]
