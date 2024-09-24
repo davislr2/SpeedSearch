@@ -1,4 +1,7 @@
 import React from "react";
+import Navbar from "./components/Navbar.js";
+import Searchbar from "./components/Searchbar.js";
+import Footer from "./components/Footer.js";
 
 class App extends React.Component {
     constructor(props) {
@@ -19,6 +22,9 @@ callAPI() {
   render() {
     return (
       <div className="App">
+        <Navbar />
+        <Searchbar />
+        <Footer />
         <header className="App-header">
           <p>{this.state.apiResponse}</p>
         </header>

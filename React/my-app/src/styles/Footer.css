@@ -1,0 +1,15 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    width : 100%;
+    background-color: #ff2800;
+}
+
+.additional-resources {
+    margin-left: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}

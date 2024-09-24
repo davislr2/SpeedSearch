@@ -1,0 +1,38 @@
+/* Style the navbar */
+.navbar {
+    background-color: #ff2800;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Make sure it stays on top */
+  }
+  
+  /* Style the links inside the list items */
+  .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-links li {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .nav-links li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  /* Change link color on hover */
+  .nav-links li a:hover {
+    background-color: #575757;
+  }
+  
