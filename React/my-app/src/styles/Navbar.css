@@ -6,6 +6,7 @@
     top: 0;
     width: 100%;
     z-index: 1000; /* Make sure it stays on top */
+    border: 2px solid black;
   }
   
   /* Style the links inside the list items */
