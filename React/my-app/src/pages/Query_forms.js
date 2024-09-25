@@ -13,5 +13,7 @@ function Query_forms() {
                 <li>Form3</li>
             </ul>
         </div>
-    )
+    );
 }
+
+export default Query_forms;

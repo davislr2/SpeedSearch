@@ -1,5 +1,6 @@
 import React from 'react';
 import Home from './pages/Home.js';
+import Query_forms from './pages/Query_forms.js';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 /*
 class App extends React.Component {
@@ -26,6 +27,7 @@ class App extends React.Component {
         <div className="App">
           <Routes>
             <Route path='/' element={<Home />} />
+            <Route path='/query_forms' element={<Query_forms />} />
           </Routes>
         </div>
       </Router>
