@@ -1,8 +1,7 @@
-import React from "react";
-import Navbar from "./components/Navbar.js";
-import Searchbar from "./components/Searchbar.js";
-import Footer from "./components/Footer.js";
-
+import React from 'react';
+import Home from './pages/Home.js';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+/*
 class App extends React.Component {
     constructor(props) {
       super(props);
@@ -19,17 +18,19 @@ callAPI() {
   componentDidMount() {
     this.callAPI();
 }
+*/
+class App extends React.Component {
   render() {
     return (
-      <div className="App">
-        <Navbar />
-        <Searchbar />
-        <Footer />
-        <header className="App-header">
-          <p>{this.state.apiResponse}</p>
-        </header>
-      </div>
-    );
+      <Router>
+        <div className="App">
+          <Routes>
+            <Route path='/' element={<Home />} />
+          </Routes>
+        </div>
+      </Router>
+    )
   }
 }
+
 export default App;
