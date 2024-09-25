@@ -1,6 +1,7 @@
 import React from 'react';
 import Home from './pages/Home.js';
 import Query_forms from './pages/Query_forms.js';
+import Footer from './components/Footer.js';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 /*
 class App extends React.Component {
@@ -21,6 +22,9 @@ callAPI() {
 }
 */
 class App extends React.Component {
+  componentDidMount() {
+    document.title = "SpeedSearch";
+  }
   render() {
     return (
       <Router>
@@ -30,6 +34,7 @@ class App extends React.Component {
             <Route path='/query_forms' element={<Query_forms />} />
           </Routes>
         </div>
+        <Footer />
       </Router>
     )
   }

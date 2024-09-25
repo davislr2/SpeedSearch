@@ -11,7 +11,6 @@ function Home() {
             <Navbar />
             <Searchbar />
             <Link className="query-forms-link" to="/query_forms">Query Forms</Link>
-            <Footer />
         </div>
     );
 }
