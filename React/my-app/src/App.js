@@ -2,6 +2,8 @@ import React from 'react';
 import Home from './pages/Home.js';
 import Query_forms from './pages/Query_forms.js';
 import Footer from './components/Footer.js';
+import F1 from './pages/F1.js';
+import './App.css';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 /*
 class App extends React.Component {
@@ -29,12 +31,15 @@ class App extends React.Component {
     return (
       <Router>
         <div className="App">
+          <div className='App-content'>
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/query_forms' element={<Query_forms />} />
+            <Route path='/F1' element={<F1 />} />
           </Routes>
+          </div>
+          <Footer />
         </div>
-        <Footer />
       </Router>
     )
   }
