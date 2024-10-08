@@ -1,2 +1,3 @@
 .eslintcache
 React/my-app/node_modules/*
+React/my-app/node_modules/.cache/*
