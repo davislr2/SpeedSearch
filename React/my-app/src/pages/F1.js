@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/F1.css';
+import {Link} from 'react-router-dom';
 
 function F1() {
     return (
@@ -8,7 +9,7 @@ function F1() {
             <h3>Seasons</h3>
             <table className='seasons-table'>
                 <tr>
-                    <td>1950</td><td>1951</td><td>1952</td><td>1953</td><td>1954</td><td>1955</td><td>1956</td><td>1957</td><td>1958</td><td>1959</td><td>1960</td><td>1961</td><td>1962</td><td>1963</td><td>1964</td>
+                    <td><Link className='link' to='/F1/Seasons/1950'>1950</Link></td><td>1951</td><td>1952</td><td>1953</td><td>1954</td><td>1955</td><td>1956</td><td>1957</td><td>1958</td><td>1959</td><td>1960</td><td>1961</td><td>1962</td><td>1963</td><td>1964</td>
                 </tr>
                 <tr>
                     <td>1965</td><td>1966</td><td>1967</td><td>1968</td><td>1969</td><td>1970</td><td>1971</td><td>1972</td><td>1973</td><td>1974</td><td>1975</td><td>1976</td><td>1977</td><td>1978</td><td>1979</td>
