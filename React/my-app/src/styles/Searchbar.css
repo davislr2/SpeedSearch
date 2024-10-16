@@ -1,15 +1,32 @@
-.searchbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    width: 100%;
+/* Ensure the header has a lower z-index */
+.header {
+    z-index: 1;
+    position: relative;
 }
 
-.searchbar input {
-    width: 80%;
+/* Style the search bar container */
+.searchbar-container {
+    margin-top: 50px; /* Adjust the margin as needed */
     padding: 10px;
-    margin: 10px;
-    border-radius: 5px;
-    border: 1px solid #ff2800;
+    z-index: 2; /* Ensure the search bar is above the header */
+    position: relative;
+}
+
+/* Style the search bar input */
+.searchbar-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Style the search results */
+.searchbar-results {
+    list-style-type: none;
+    padding: 100px;
+    margin: 50px;
+}
+
+.searchbar-results li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
 }
