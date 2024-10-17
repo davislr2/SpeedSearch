@@ -45,9 +45,9 @@ def query_handler(query):
         driver1 = split_query[0].strip()
         driver2 = split_query[1].strip()
 
-        #####################
-        # DRIVER VS DRIVER  #
-        #####################
+        ####################
+        # DRIVER VS DRIVER #
+        ####################
         driver1_exists = False
         driver2_exists = False
         driver1_stats = None
@@ -55,10 +55,10 @@ def query_handler(query):
 
         # Check F1 first.
         for driver in f1_drivers: 
-            if driver['name'] == driver1:
+            if driver['name'].lower() == driver1:
                 driver1_exists = True
                 driver1_stats = driver
-            if driver['name'] == driver2:
+            if driver['name'].lower() == driver2:
                 driver2_exists = True
                 driver2_stats = driver
             if driver1_exists and driver2_exists:
@@ -69,10 +69,10 @@ def query_handler(query):
             if (driver1_exists and not driver2_exists) or (not driver1_exists and driver2_exists):
                 return [{"result": "The Search Engine does not support comparisons between drivers from different series."}]
             for driver in f2_drivers: 
-                if driver['name'] == driver1:
+                if driver['name'].lower == driver1:
                     driver1_exists = True
                     driver1_stats = driver
-                if driver['name'] == driver2:
+                if driver['name'].lower == driver2:
                     driver2_exists = True
                     driver2_stats = driver
                 if driver1_exists and driver2_exists:
@@ -95,10 +95,10 @@ def query_handler(query):
         if driver1_exists and driver2_exists:
             return [{"result": str(driver1_stats) + " vs " + str(driver2_stats)}]
         else:
-            
-            #####################
+
+            ####################
             #   TEAM VS TEAM   #
-            #####################
+            ####################
             print("TEAM VERSUS TEAM QUERY")
             team1 = driver1.upper()
             team2 = driver2.upper()
@@ -119,7 +119,7 @@ def query_handler(query):
                     team2_stats = team
                 if team1_exists and team2_exists:
                     break
-
+            # Check F2 next.
             if not team1_exists or not team2_exists:
                 if (team1_exists and not team2_exists) or (not team1_exists and team2_exists):
                     return [{"result": "The Search Engine does not support comparisons between teams from different series."}]
@@ -132,7 +132,7 @@ def query_handler(query):
                         team2_stats = team
                     if team1_exists and team2_exists:
                         break
-
+            # Check F3 last. 
             if not team1_exists or not team2_exists:
                 if (team1_exists and not team2_exists) or (not team1_exists and team2_exists):
                     return [{"result": "The Search Engine does not support comparisons between teams from different series."}]
