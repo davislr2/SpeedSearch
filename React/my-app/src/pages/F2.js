@@ -18,8 +18,10 @@ function F2(){
             <h3>Grand Prix</h3>
             <table className='gp-table'>
                 <tr>
-                    <td>2017</td><td>2018</td><td>2019</td><td>2020</td><td>2021</td><td>2022</td><td>2023</td><td>2024</td>
-                </tr>
+                <td><Link className='link' to='/F2/grandPrix/2017'>2017</Link></td><td><Link className='link' to='/F2/grandPrix/2018'>2018</Link></td><td><Link className='link' to='/F2/grandPrix/2019'>2019</Link></td>
+                   <td><Link className='link' to='/F2/grandPrix/2020'>2020</Link></td><td><Link className='link' to='/F2/grandPrix/2021'>2021</Link></td><td><Link className='link' to='/F2/grandPrix/2022'>2022</Link></td>
+                   <td><Link className='link' to='/F2/grandPrix/2023'>2023</Link></td><td><Link className='link' to='/F2/grandPrix/2024'>2024</Link></td>
+                   </tr>
             </table>
 
             <h3>Drivers</h3>
