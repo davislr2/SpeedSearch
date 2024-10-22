@@ -55,10 +55,10 @@ def query_handler(query):
 
         # Check F1 first.
         for driver in f1_drivers: 
-            if driver['name'].lower() == driver1:
+            if driver['name'].lower() == driver1.lower():
                 driver1_exists = True
                 driver1_stats = driver
-            if driver['name'].lower() == driver2:
+            if driver['name'].lower() == driver2.lower():
                 driver2_exists = True
                 driver2_stats = driver
             if driver1_exists and driver2_exists:
