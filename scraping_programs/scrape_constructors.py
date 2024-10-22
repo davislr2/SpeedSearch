@@ -37,9 +37,13 @@ def scrapeConstructorData():
                 time.sleep(5)
                 continue
             # If the site doesn't have points listed, set points to 0.
-            points = driver.find_elements(By.ID, "ctl00_CPH_Main_LB_Point")
-            if len(points) == 0: points = 0
-            else: points = re.findall(r'\d+\.\d+|\d+', points[0].text)[0]
+            points_element = driver.find_elements(By.ID, "ctl00_CPH_Main_LB_Point")
+            if len(points_element) == 0:
+                points = 0
+            else:
+                # Extract all numbers including spaces, then join them and remove spaces
+                points_text = points_element[0].text
+                points = re.sub(r'[^\d.]', '', points_text)
             # Get the number of wins, if wins aren't listed set to 0.
             wins = driver.find_elements(By.ID, "ctl00_CPH_Main_HL_StatsVictoire")
             if len(wins) == 0:
@@ -103,7 +107,7 @@ def scrapeConstructorData():
             }
 
             try:
-                with open('f1_constructors.json', 'r') as file:
+                with open('f1_constructors2.json', 'r') as file:
                     constructors_list = json.load(file)
             except (FileNotFoundError, json.JSONDecodeError):
                 constructors_list = []
@@ -112,7 +116,7 @@ def scrapeConstructorData():
             constructors_list.append(constructor)
 
             # Step 3: Write the updated list back to the file
-            with open('f1_constructors.json', 'w') as file:
+            with open('f1_constructors2.json', 'w') as file:
                 json.dump(constructors_list, file, indent=4)
 
             # Click the next button
