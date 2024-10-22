@@ -69,10 +69,10 @@ def query_handler(query):
             if (driver1_exists and not driver2_exists) or (not driver1_exists and driver2_exists):
                 return [{"result": "The Search Engine does not support comparisons between drivers from different series."}]
             for driver in f2_drivers: 
-                if driver['name'].lower == driver1:
+                if driver['name'].lower == driver1.lower():
                     driver1_exists = True
                     driver1_stats = driver
-                if driver['name'].lower == driver2:
+                if driver['name'].lower == driver2.lower():
                     driver2_exists = True
                     driver2_stats = driver
                 if driver1_exists and driver2_exists:
@@ -83,10 +83,10 @@ def query_handler(query):
             if (driver1_exists and not driver2_exists) or (not driver1_exists and driver2_exists):
                 return [{"result": "The Search Engine does not support comparisons between drivers from different series."}]
             for driver in f3_drivers: 
-                if driver['name'] == driver1:
+                if driver['name'].lower() == driver1.lower():
                     driver1_exists = True
                     driver1_stats = driver
-                if driver['name'] == driver2:
+                if driver['name'].lower() == driver2.lower():
                     driver2_exists = True
                     driver2_stats = driver
                 if driver1_exists and driver2_exists:
