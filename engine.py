@@ -54,6 +54,14 @@ def query_handler(query):
             return team_most_q(query)
         else:
             return driver_most_q(query)
+    
+    
+    
+    return driver_team_q(query)  # This will almost always be the last thing that gets checked. 
+    
+        
+    return [{"result": "The following query was not accepted: " + query}]
+    
         
     
 def versus_q(left, right, query):
@@ -167,7 +175,6 @@ def versus_q(left, right, query):
         
     return [{"result": "The following query was not accepted: " + query}]
 
-
 def driver_most_q(query):
     # check the query to see if the series is specified. 
     series = "F1"
@@ -178,17 +185,17 @@ def driver_most_q(query):
 
     # determine which stat the user is asking for.
     stat = ""
-    if "wins" in query:
+    if "wins" in query or "Wins" in query or "victories" in query or "Victories" in query:
         stat = "wins"
-    elif "poles" in query:
+    elif "poles" in query or "Poles" in query or "pole positions" in query or "Pole Positions" in query:
         stat = "poles"
-    elif "points" in query:
+    elif "points" in query or "Points" in query or "point" in query:
         stat = "points"
-    elif "championships" in query:
+    elif "championships" in query or "Championships" in query:
         stat = "championships"
     else:
         return [{"result": "The following query was not accepted, we could not determine the stat you were looking for: " + query}]
-
+    
     
     if series == "F1":
         if stat == "wins":
@@ -424,11 +431,28 @@ def team_most_q(query):
         else:
             return [{"result": "The following query was not accepted, we could not determine the stat you were looking for: " + query}]
     
-
+def driver_team_q(query):
+    for driver in f1_drivers:
+        if query.lower() == driver['name'].lower():
+            return [{"result": str(driver)}]
+    for team in f1_teams:
+        if query.lower() == team['name'].lower():
+            return [{"result": str(team)}]
+    for driver in f2_drivers:
+        if query.lower() == driver['name'].lower():
+            return [{"result": str(driver)}]
+    for team in f2_teams:
+        if query.lower() == team['name'].lower():
+            return [{"result": str(team)}]
+    for driver in f3_drivers:
+        if query.lower() == driver['name'].lower():
+            return [{"result": str(driver)}]
+    for team in f3_teams:
+        if query.lower() == team['name'].lower():
+            return [{"result": str(team)}]
 
 
 @app.route('/search', methods=['GET'])
-@cross_origin(origin='http://localhost:3000')  # Apply CORS only to this route
 def search():
     query = request.args.get('query')
     return jsonify(query_handler(query))
