@@ -8,9 +8,12 @@ function Query_forms() {
             <h1>Query Forms</h1>
             <p> This is a list of query forms that are accepted by the search function on the site.</p>
             <ul>
-                <li>Form1</li>
-                <li>Form2</li>
-                <li>Form3</li>
+                <li>[Driver] vs [Driver]</li>
+                <li>[Team] vs [Team]</li>
+                <li>Which driver has the most [counting stat] in [series]</li>
+                <li>Which team has the most [counting stat] in [series]</li>
+                <li>[Driver]</li>
+                <li>[Team]</li>
             </ul>
         </div>
     );

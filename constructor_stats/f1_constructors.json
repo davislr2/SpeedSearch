@@ -280,6 +280,16 @@
         "best_championship_position": 10
     },
     {
+        "name": "FERRARI",
+        "points": 10209,
+        "wins": 248,
+        "poles": 253,
+        "start_year": 1950,
+        "end_year": 2024,
+        "championships": 16,
+        "best_championship_position": 1
+    },
+    {
         "name": "FITTIPALDI",
         "points": 12.0,
         "wins": 0,
