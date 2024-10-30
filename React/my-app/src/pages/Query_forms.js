@@ -12,7 +12,8 @@ function Query_forms() {
                 <li>[Team] vs [Team]</li>
                 <li>Which driver has the most [counting stat] in [series]</li>
                 <li>Which team has the most [counting stat] in [series]</li>
-                <li></li>
+                <li>[Driver]</li>
+                <li>[Team]</li>
             </ul>
         </div>
     );
