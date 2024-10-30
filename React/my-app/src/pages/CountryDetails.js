@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import '../styles/CountryDetails.css';
 
 const CountryDetails = () => {
-    const { year, country } = useParams();
+    const { level, year, country } = useParams();
     const [details, setDetails] = useState(null);
 
     useEffect(() => {
@@ -11,25 +11,60 @@ const CountryDetails = () => {
             try {
                 const response = await fetch(`/data/F1_grand_prix.json`);
                 const data = await response.json();
-                const countryData = data[year]?.[country.toUpperCase()];
+                const countryData = data[year]?.[country];
+
                 setDetails(countryData);
             } catch (error) {
                 console.error('Error fetching country details:', error);
             }
+
         };
 
         fetchCountryDetails();
-    }, [year, country]);
+    }, [level, year, country]);
 
     if (!details) {
         return <div> Loading details...</div>;
     }
 
-    return(
-        <div>
-            <h2>{country} Grand Prix - {year}</h2>
-            {/* stuff */}
-            <pre>{JSON.stringify(details, null, 2)}</pre>
+    return (
+        <div className="country-details-container">
+            <div className="header-section">
+                <div className="race-info">
+                    <h1>{country} Grand Prix - {year}</h1>
+                    <p>Circuit: {details.circuit}</p>
+                    <p>Date: {details.date}</p>
+                </div>
+            </div>
+            <table className="details-table">
+                <thead>
+                    <tr>
+                        <th>Position</th>
+                        <th>Driver</th>
+                        <th>Number</th>
+                        <th>Laps</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {details.results.map((result, index) => (
+                        <tr
+                            /*Colors in based on position*/
+                            key={index}
+                            className={`
+                            ${result.position === "1" ? 'first-place' : ''}
+                            ${result.position === "2" ? 'second-place' : ''}
+                            ${result.position === "3" ? 'third-place' : ''}
+                            `}>
+                            <td className="position-column">{result.position}</td>
+                            <td className="driver-column">{result.driver_name}</td>
+                            <td className="number-column">{result.number}</td>
+                            <td className="laps-column">{result.laps}</td>
+                            <td className="points-column">{result.points}</td>
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
         </div>
     );
 };
