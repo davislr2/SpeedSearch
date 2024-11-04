@@ -16,9 +16,63 @@ const Searchbar = () => {
                 try {
                     const response = await axios.get(`http://127.0.0.1:5000/search?query=${searchTerm}`);
                     console.log(response.data); // Log the response data for debugging
-                    setResults(response.data);
+
+                    let [responseType, jsonData1, jsonData2] = response.data;
+                    let parsedResults = [];
+
+                    // VERSUS IDENTIFIER
+                    if (responseType.includes('versus')) {
+                        if (jsonData1 && jsonData2) {
+                            console.log("Original jsonData1:", jsonData1);
+                            console.log("Original jsonData2:", jsonData2);
+                            // Replace single quotes with double quotes
+                            jsonData1 = jsonData1.replace(/'/g, '"');
+                            jsonData2 = jsonData2.replace(/'/g, '"');
+                            console.log("Formatted jsonData1:", jsonData1);
+                            console.log("Formatted jsonData2:", jsonData2);
+                            try {
+                                parsedResults.push({ type: responseType, data1: JSON.parse(jsonData1), data2: JSON.parse(jsonData2) });
+                            } catch (parseError) {
+                                console.error("JSON parse error:", parseError);
+                            }
+                        } else {
+                            console.error("jsonData1 or jsonData2 is undefined or null");
+                        }
+                    // DRIVER OR TEAM IDENTIFIER
+                    } else if (responseType === 'driver' || responseType === 'team') {
+                        if (jsonData1) {
+                            console.log("Original jsonData1:", jsonData1);
+                            // Replace single quotes with double quotes
+                            jsonData1 = jsonData1.replace(/'/g, '"');
+                            console.log("Formatted jsonData1:", jsonData1);
+                            try {
+                                parsedResults.push({ type: responseType, data1: JSON.parse(jsonData1) });
+                            } catch (parseError) {
+                                console.error("JSON parse error:", parseError);
+                            }
+                        } else {
+                            console.error("jsonData1 is undefined or null");
+                        }
+                    // MOST IDENTIFIER
+                    } else if(responseType === 'most') {
+                        if (jsonData1) {
+                            parsedResults.push({ type: responseType, data1: jsonData1 });
+                        }
+
+                    }
+                    
+                    
+                    else {
+                        if (jsonData1) {
+                            parsedResults.push({ type: responseType, data1: jsonData1 });
+                        } else {
+                            console.error("jsonData1 is undefined or null");
+                        }
+                    }
+
+                    setResults(parsedResults);
                 } catch (error) {
-                    console.error("API fetch error: ", error);
+                    console.error("API fetch error:", error);
                     setResults([]);
                 }
             } else {
@@ -37,13 +91,124 @@ const Searchbar = () => {
                 onKeyPress={handleKeyPress}
                 className='searchbar-input'
             />
-            <ul className='searchbar-results'>
-                {results.map((result, index) => (
-                    <li key={index}>{result.result}</li>
-                ))}
-            </ul>
+            {results && results.map((resultObj, index) => {
+                // Defining function to map over results and render them.
+                if (resultObj.type === 'driver_versus') {
+                    // Ensure resultObj.data1 and resultObj.data2 are defined
+                    if (resultObj.data1 && resultObj.data2) {
+                        return (
+                            <div key={index} className='searchbar-results'>
+                                <div className='driver'>
+                                    <h3>Driver 1</h3>
+                                    <ul>
+                                        {Object.entries(resultObj.data1).map(([key, value], i) => (
+                                            <li key={i}><strong>{key}:</strong> {formatValue(key, value)}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                                <div className='driver'>
+                                    <h3>Driver 2</h3>
+                                    <ul>
+                                        {Object.entries(resultObj.data2).map(([key, value], i) => (
+                                            <li key={i}><strong>{key}:</strong> {formatValue(key, value)}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            </div>
+                        );
+                    } else {
+                        console.error("resultObj.data1 or resultObj.data2 is undefined or null");
+                        return null;
+                    }
+                }
+                if (resultObj.type === 'team_versus') {
+                    // Ensure resultObj.data1 and resultObj.data2 are defined
+                    if (resultObj.data1 && resultObj.data2) {
+                        return (
+                            <div key={index} className='searchbar-results'>
+                                <div className='driver'>
+                                    <h3>Team 1</h3>
+                                    <ul>
+                                        {Object.entries(resultObj.data1).map(([key, value], i) => (
+                                            <li key={i}><strong>{key}:</strong> {formatValue(key, value)}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                                <div className='driver'>
+                                    <h3>Team 2</h3>
+                                    <ul>
+                                        {Object.entries(resultObj.data2).map(([key, value], i) => (
+                                            <li key={i}><strong>{key}:</strong> {formatValue(key, value)}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            </div>
+                        );
+                    } else {
+                        console.error("resultObj.data1 or resultObj.data2 is undefined or null");
+                        return null;
+                    }
+                }
+
+                if (resultObj.type === 'driver' || resultObj.type === 'team') {
+                    if (resultObj.data1) {
+                        return (
+                            <div key={index} className='searchbar-results'>
+                                <div className='driver'>
+                                    <ul>
+                                        {Object.entries(resultObj.data1).map(([key, value], i) => (
+                                            <li key={i}><strong>{key}:</strong> {formatValue(key, value)}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            </div>
+                        )
+                    }
+                }
+
+                if (resultObj.type === 'most') {
+                    return (
+                        <div key={index} className='searchbar-results'>
+                            <div className='most'>
+                                <p>{resultObj.data1}</p>
+                            </div>
+                        </div>
+                    )
+                }
+
+                if (resultObj.type === "error") {
+                    return (
+                        <div key={index} className='searchbar-results'>
+                            <div className='error'>
+                                <h3>ERROR!</h3>
+                                <p>{resultObj.data1}</p>
+                            </div>
+                        </div>
+                    )
+                }
+
+                return null; // Ensure a return value for other types
+            })}
         </div>
     );
 }
+
+const formatValue = (key, value) => {
+    switch (key) {
+        case 'wins':
+            return `${value} 🏆`;
+        case 'poles':
+            return `${value} 🚦`;
+        case 'championships':
+            return `${value} championships`;
+        case 'points':
+            return `${parseFloat(value).toFixed(1)} points`;
+        case 'name':
+        case 'team_name':
+            return <strong>{value}</strong>;
+        default:
+            return value;
+    }
+};
 
 export default Searchbar;

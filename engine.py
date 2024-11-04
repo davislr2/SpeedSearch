@@ -90,7 +90,7 @@ def versus_q(left, right, query):
     # Check F2 next.
     if not driver1_exists or not driver2_exists:
         if (driver1_exists and not driver2_exists) or (not driver1_exists and driver2_exists):
-            return [{"result": "The Search Engine does not support comparisons between drivers from different series."}]
+            return ["error", "The Search Engine does not support comparisons between drivers from different series."]
         for driver in f2_drivers: 
             if driver['name'].lower() == driver1.lower():
                 driver1_exists = True
@@ -104,7 +104,7 @@ def versus_q(left, right, query):
     # Check F3 last.
     if not driver1_exists or not driver2_exists:
         if (driver1_exists and not driver2_exists) or (not driver1_exists and driver2_exists):
-            return [{"result": "The Search Engine does not support comparisons between drivers from different series."}]
+            return ["error", "The Search Engine does not support comparisons between drivers from different series."]
         for driver in f3_drivers: 
             if driver['name'].lower() == driver1.lower():
                 driver1_exists = True
@@ -116,17 +116,15 @@ def versus_q(left, right, query):
                 break
             
     if driver1_exists and driver2_exists:
-        return [{"result": str(driver1_stats) + " vs " + str(driver2_stats)}]
+        return ["driver_versus", str(driver1_stats), str(driver2_stats)]
     else:
 
         ####################
         #   TEAM VS TEAM   #
         ####################
-        print("TEAM VERSUS TEAM QUERY")
         team1 = driver1.upper()
         team2 = driver2.upper()
-        print("team1: " + team1)
-        print("team2: " + team2)
+
         team1_exists = False
         team2_exists = False
         team1_stats = None
@@ -145,7 +143,7 @@ def versus_q(left, right, query):
         # Check F2 next.
         if not team1_exists or not team2_exists:
             if (team1_exists and not team2_exists) or (not team1_exists and team2_exists):
-                return [{"result": "The Search Engine does not support comparisons between teams from different series."}]
+                return ["error", "The Search Engine does not support comparisons between teams from different series."]
             for team in f2_teams:
                 if team['name'] == team1:
                     team1_exists = True
@@ -158,7 +156,7 @@ def versus_q(left, right, query):
         # Check F3 last. 
         if not team1_exists or not team2_exists:
             if (team1_exists and not team2_exists) or (not team1_exists and team2_exists):
-                return [{"result": "The Search Engine does not support comparisons between teams from different series."}]
+                return ["error", "The Search Engine does not support comparisons between teams from different series."]
             for team in f3_teams:
                 if team['name'] == team1:
                     team1_exists = True
@@ -170,10 +168,10 @@ def versus_q(left, right, query):
                     break
 
         if team1_exists and team2_exists:
-            return [{"result": str(team1_stats) + " vs " + str(team2_stats)}]                         
+            return ["team_versus", str(team1_stats), str(team2_stats)]                         
         
         
-    return [{"result": "The following query was not accepted: " + query}]
+    return ["error", "The following query was not accepted: " + query]
 
 def driver_most_q(query):
     # check the query to see if the series is specified. 
@@ -191,10 +189,10 @@ def driver_most_q(query):
         stat = "poles"
     elif "points" in query or "Points" in query or "point" in query:
         stat = "points"
-    elif "championships" in query or "Championships" in query:
+    elif "championships" in query or "Championships" in query or "titles" in query or "Titles" in query:
         stat = "championships"
     else:
-        return [{"result": "The following query was not accepted, we could not determine the stat you were looking for: " + query}]
+        return ["error", "Your query was not accepted, we couldn't find the statistic in your query: \n \"" + query + "\""]
     
     
     if series == "F1":
@@ -205,7 +203,7 @@ def driver_most_q(query):
                 if int(driver['wins']) > max_wins:
                     max_wins = int(driver['wins'])
                     max_wins_driver = driver
-            return [{"result": "The driver with the most wins in F1 is " + str(max_wins_driver['name']) + " with " + str(max_wins) + " wins."}]
+            return ["most", "The driver with the most wins in F1 is " + str(max_wins_driver['name']) + " with " + str(max_wins) + " wins."]
         elif stat == "poles":
             max_poles = 0
             max_poles_driver = None
@@ -213,7 +211,7 @@ def driver_most_q(query):
                 if int(driver['poles']) > max_poles:
                     max_poles = int(driver['poles'])
                     max_poles_driver = driver
-            return [{"result": "The driver with the most poles in F1 is " + str(max_poles_driver['name']) + " with " + str(max_poles) + " poles."}]
+            return ["most", "The driver with the most poles in F1 is " + str(max_poles_driver['name']) + " with " + str(max_poles) + " poles."]
         elif stat == "points":
             max_points = 0
             max_points_driver = None
@@ -221,7 +219,7 @@ def driver_most_q(query):
                 if int(driver['points']) > max_points:
                     max_points = int(driver['points'])
                     max_points_driver = driver
-            return [{"result": "The driver with the most points in F1 is " + str(max_points_driver['name']) + " with " + str(max_points) + " points."}]
+            return ["most", "The driver with the most points in F1 is " + str(max_points_driver['name']) + " with " + str(max_points) + " points."]
         elif stat == "championships":
             max_championships = 0
             max_championships_driver = None
@@ -229,9 +227,9 @@ def driver_most_q(query):
                 if int(driver['championships']) > max_championships:
                     max_championships = int(driver['championships'])
                     max_championships_driver = driver
-            return [{"result": "The driver with the most championships in F1 is " + str(max_championships_driver['name']) + " with " + str(max_championships) + " championships."}]
+            return ["most", "The driver with the most championships in F1 is " + str(max_championships_driver['name']) + " with " + str(max_championships) + " championships."]
         else:
-            return [{"result": "The following query was not accepted, we could not determine the stat you were looking for: " + query}]
+            return ["error", "Your query was not accepted, we couldn't find the statistic in your query: \n \"" + query + "\""]
             
     elif series == "F2":
         if stat == "wins":
@@ -241,7 +239,7 @@ def driver_most_q(query):
                 if int(driver['wins']) > max_wins:
                     max_wins = int(driver['wins'])
                     max_wins_driver = driver
-            return [{"result": "The driver with the most wins in F2 is " + str(max_wins_driver['name']) + " with " + str(max_wins) + " wins."}]
+            return ["most", "The driver with the most wins in F2 is " + str(max_wins_driver['name']) + " with " + str(max_wins) + " wins."]
         elif stat == "poles":
             max_poles = 0
             max_poles_driver = None
@@ -249,7 +247,7 @@ def driver_most_q(query):
                 if int(driver['poles']) > max_poles:
                     max_poles = int(driver['poles'])
                     max_poles_driver = driver
-            return [{"result": "The driver with the most poles in F2 is " + str(max_poles_driver['name']) + " with " + str(max_poles) + " poles."}]
+            return ["most", "The driver with the most poles in F2 is " + str(max_poles_driver['name']) + " with " + str(max_poles) + " poles."]
         elif stat == "points":
             max_points = 0
             max_points_driver = None
@@ -257,7 +255,7 @@ def driver_most_q(query):
                 if int(driver['points']) > max_points:
                     max_points = int(driver['points'])
                     max_points_driver = driver
-            return [{"result": "The driver with the most points in F2 is " + str(max_points_driver['name']) + " with " + str(max_points) + " points."}]
+            return ["most", "The driver with the most points in F2 is " + str(max_points_driver['name']) + " with " + str(max_points) + " points."]
         elif stat == "championships":
             max_championships = 0
             max_championships_driver = None
@@ -265,9 +263,9 @@ def driver_most_q(query):
                 if int(driver['championships']) > max_championships:
                     max_championships = int(driver['championships'])
                     max_championships_driver = driver
-            return [{"result": "The driver with the most championships in F2 is " + str(max_championships_driver['name']) + " with " + str(max_championships) + " championships."}]
+            return ["most", "The driver with the most championships in F2 is " + str(max_championships_driver['name']) + " with " + str(max_championships) + " championships."]
         else:
-            return [{"result": "The following query was not accepted, we could not determine the stat you were looking for: " + query}]
+            return ["error", "Your query was not accepted, we couldn't find the statistic in your query: \n \"" + query + "\""]
         
     elif series == "F3":
         if stat == "wins":
@@ -277,7 +275,7 @@ def driver_most_q(query):
                 if int(driver['wins']) > max_wins:
                     max_wins = int(driver['wins'])
                     max_wins_driver = driver
-            return [{"result": "The driver with the most wins in F3 is " + str(max_wins_driver['name']) + " with " + str(max_wins) + " wins."}]
+            return ["most", "The driver with the most wins in F3 is " + str(max_wins_driver['name']) + " with " + str(max_wins) + " wins."]
         elif stat == "poles":
             max_poles = 0
             max_poles_driver = None
@@ -285,7 +283,7 @@ def driver_most_q(query):
                 if int(driver['poles']) > max_poles:
                     max_poles = int(driver['poles'])
                     max_poles_driver = driver
-            return [{"result": "The driver with the most poles in F3 is " + str(max_poles_driver['name']) + " with " + str(max_poles) + " poles."}]
+            return ["most", "The driver with the most poles in F3 is " + str(max_poles_driver['name']) + " with " + str(max_poles) + " poles."]
         elif stat == "points":
             max_points = 0
             max_points_driver = None
@@ -293,7 +291,7 @@ def driver_most_q(query):
                 if int(driver['points']) > max_points:
                     max_points = int(driver['points'])
                     max_points_driver = driver
-            return [{"result": "The driver with the most points in F3 is " + str(max_points_driver['name']) + " with " + str(max_points) + " points."}]
+            return ["most", "The driver with the most points in F3 is " + str(max_points_driver['name']) + " with " + str(max_points) + " points."]
         elif stat == "championships":
             max_championships = 0
             max_championships_driver = None
@@ -301,9 +299,9 @@ def driver_most_q(query):
                 if int(driver['championships']) > max_championships:
                     max_championships = int(driver['championships'])
                     max_championships_driver = driver
-            return [{"result": "The driver with the most championships in F3 is " + str(max_championships_driver['name']) + " with " + str(max_championships) + " championships."}]
+            return ["most", "The driver with the most championships in F3 is " + str(max_championships_driver['name']) + " with " + str(max_championships) + " championships."]
         else:
-            return [{"result": "The following query was not accepted, we could not determine the stat you were looking for: " + query}]
+            return ["error", "Your query was not accepted, we couldn't find the statistic in your query: \n \"" + query + "\""]
 
 def team_most_q(query):
     series = "F1"
@@ -312,6 +310,7 @@ def team_most_q(query):
     if "F3" in query or "f3" in query or "Formula 3" in query or "formula 3" in query or "Formula Three" in query or "formula three" in query:
         series = "F3"
     
+    stat = ""
     if "wins" in query or "Wins" in query or "victories" in query or "Victories" in query:
         stat = "wins"
     elif "poles" in query or "Poles" in query or "pole positions" in query or "Pole Positions" in query:
@@ -321,8 +320,8 @@ def team_most_q(query):
     elif "championships" in query or "Championships" in query:
         stat = "championships"
     else:
-        return [{"result": "The following query was not accepted, we could not determine the stat you were looking for: " + query}]
-    
+        return ["error", "Your query was not accepted, we couldn't find the statistic in your query: \n \"" + query + "\""]
+
     if series == "F1":
         if stat == "wins":
             max_wins = 0
@@ -331,7 +330,7 @@ def team_most_q(query):
                 if int(team['wins']) > max_wins:
                     max_wins = int(team['wins'])
                     max_wins_team = team
-            return [{"result": "The team with the most wins in F1 is " + str(max_wins_team['name']) + " with " + str(max_wins) + " wins."}]
+            return ["most", "The team with the most wins in F1 is " + str(max_wins_team['name']) + " with " + str(max_wins) + " wins."]
         elif stat == "poles":
             max_poles = 0
             max_poles_team = None
@@ -339,7 +338,7 @@ def team_most_q(query):
                 if int(team['poles']) > max_poles:
                     max_poles = int(team['poles'])
                     max_poles_team = team
-            return [{"result": "The team with the most poles in F1 is " + str(max_poles_team['name']) + " with " + str(max_poles) + " poles."}]
+            return ["most", "The team with the most poles in F1 is " + str(max_poles_team['name']) + " with " + str(max_poles) + " poles."]
         elif stat == "points":
             max_points = 0
             max_points_team = None
@@ -347,7 +346,7 @@ def team_most_q(query):
                 if int(team['points']) > max_points:
                     max_points = int(team['points'])
                     max_points_team = team
-            return [{"result": "The team with the most points in F1 is " + str(max_points_team['name']) + " with " + str(max_points) + " points."}]
+            return ["most", "The team with the most points in F1 is " + str(max_points_team['name']) + " with " + str(max_points) + " points."]
         elif stat == "championships":
             max_championships = 0
             max_championships_team = None
@@ -355,9 +354,9 @@ def team_most_q(query):
                 if int(team['championships']) > max_championships:
                     max_championships = int(team['championships'])
                     max_championships_team = team
-            return [{"result": "The team with the most championships in F1 is " + str(max_championships_team['name']) + " with " + str(max_championships) + " championships."}]
+            return ["most", "The team with the most championships in F1 is " + str(max_championships_team['name']) + " with " + str(max_championships) + " championships."]
         else:
-            return [{"result": "The following query was not accepted, we could not determine the stat you were looking for: " + query}]
+            return ["most", "Your query was not accepted, we could not determine the stat you were looking for: " + query]
     
     if series == "F2":
         if stat == "wins":
@@ -367,7 +366,7 @@ def team_most_q(query):
                 if int(team['wins']) > max_wins:
                     max_wins = int(team['wins'])
                     max_wins_team = team
-            return [{"result": "The team with the most wins in F2 is " + str(max_wins_team['name']) + " with " + str(max_wins) + " wins."}]
+            return ["most", "The team with the most wins in F2 is " + str(max_wins_team['name']) + " with " + str(max_wins) + " wins."]
         elif stat == "poles":
             max_poles = 0
             max_poles_team = None
@@ -375,7 +374,7 @@ def team_most_q(query):
                 if int(team['poles']) > max_poles:
                     max_poles = int(team['poles'])
                     max_poles_team = team
-            return [{"result": "The team with the most poles in F2 is " + str(max_poles_team['name']) + " with " + str(max_poles) + " poles."}]
+            return ["most", "The team with the most poles in F2 is " + str(max_poles_team['name']) + " with " + str(max_poles) + " poles."]
         elif stat == "points":
             max_points = 0
             max_points_team = None
@@ -383,7 +382,7 @@ def team_most_q(query):
                 if int(team['points']) > max_points:
                     max_points = int(team['points'])
                     max_points_team = team
-            return [{"result": "The team with the most points in F2 is " + str(max_points_team['name']) + " with " + str(max_points) + " points."}]
+            return ["most", "The team with the most points in F2 is " + str(max_points_team['name']) + " with " + str(max_points) + " points."]
         elif stat == "championships":
             max_championships = 0
             max_championships_team = None
@@ -391,9 +390,9 @@ def team_most_q(query):
                 if int(team['championships']) > max_championships:
                     max_championships = int(team['championships'])
                     max_championships_team = team
-            return [{"result": "The team with the most championships in F2 is " + str(max_championships_team['name']) + " with " + str(max_championships) + " championships."}]
+            return ["most", "The team with the most championships in F2 is " + str(max_championships_team['name']) + " with " + str(max_championships) + " championships."]
         else:
-            return [{"result": "The following query was not accepted, we could not determine the stat you were looking for: " + query}]
+            return ["error", "Your query was not accepted, we couldn't find the statistic: \"" + stat + "\""]
         
     if series == "F3":
         if stat == "wins":
@@ -403,7 +402,7 @@ def team_most_q(query):
                 if int(team['wins']) > max_wins:
                     max_wins = int(team['wins'])
                     max_wins_team = team
-            return [{"result": "The team with the most wins in F3 is " + str(max_wins_team['name']) + " with " + str(max_wins) + " wins."}]
+            return ["most", "The team with the most wins in F3 is " + str(max_wins_team['name']) + " with " + str(max_wins) + " wins."]
         elif stat == "poles":
             max_poles = 0
             max_poles_team = None
@@ -411,7 +410,7 @@ def team_most_q(query):
                 if int(team['poles']) > max_poles:
                     max_poles = int(team['poles'])
                     max_poles_team = team
-            return [{"result": "The team with the most poles in F3 is " + str(max_poles_team['name']) + " with " + str(max_poles) + " poles."}]
+            return ["most", "The team with the most poles in F3 is " + str(max_poles_team['name']) + " with " + str(max_poles) + " poles."]
         elif stat == "points":
             max_points = 0
             max_points_team = None
@@ -419,7 +418,7 @@ def team_most_q(query):
                 if int(team['points']) > max_points:
                     max_points = int(team['points'])
                     max_points_team = team
-            return [{"result": "The team with the most points in F3 is " + str(max_points_team['name']) + " with " + str(max_points) + " points."}]
+            return ["most", "The team with the most points in F3 is " + str(max_points_team['name']) + " with " + str(max_points) + " points."]
         elif stat == "championships":
             max_championships = 0
             max_championships_team = None
@@ -427,29 +426,29 @@ def team_most_q(query):
                 if int(team['championships']) > max_championships:
                     max_championships = int(team['championships'])
                     max_championships_team = team
-            return [{"result": "The team with the most championships in F3 is " + str(max_championships_team['name']) + " with " + str(max_championships) + " championships."}]
+            return ["most", "The team with the most championships in F3 is " + str(max_championships_team['name']) + " with " + str(max_championships) + " championships."]
         else:
-            return [{"result": "The following query was not accepted, we could not determine the stat you were looking for: " + query}]
+            return ["most", "The following query was not accepted, we could not determine the stat you were looking for: " + query]
     
 def driver_team_q(query):
     for driver in f1_drivers:
         if query.lower() == driver['name'].lower():
-            return [{"result": str(driver)}]
+            return ["driver", str(driver)]
     for team in f1_teams:
         if query.lower() == team['name'].lower():
-            return [{"result": str(team)}]
+            return ["team", str(team)]
     for driver in f2_drivers:
         if query.lower() == driver['name'].lower():
-            return [{"result": str(driver)}]
+            return ["driver", str(driver)]
     for team in f2_teams:
         if query.lower() == team['name'].lower():
-            return [{"result": str(team)}]
+            return ["team", str(team)]
     for driver in f3_drivers:
         if query.lower() == driver['name'].lower():
-            return [{"result": str(driver)}]
+            return ["driver", str(driver)]
     for team in f3_teams:
         if query.lower() == team['name'].lower():
-            return [{"result": str(team)}]
+            return ["team", str(team)]
 
 
 @app.route('/search', methods=['GET'])
