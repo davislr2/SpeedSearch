@@ -17,7 +17,9 @@ f2_teams = []
 f3_drivers = []
 f3_teams = []
 
-
+########################
+#  LOAD DATA FUNCTION  #
+########################
 def load_data():
     global f1_drivers, f1_teams, f2_drivers, f2_teams, f3_drivers, f3_teams
 
@@ -39,7 +41,7 @@ def query_handler(query):
     ####################
     #  VERSUS QUERIES  #
     ####################
-    if "vs" in query:
+    if "vs" in query or "VS" in query or "Vs" in query or "versus" in query or "Versus" in query or "vs." in query or "Vs." in query:
         split_query = query.split("vs")
         left = split_query[0].strip()
         right = split_query[1].strip()
@@ -55,17 +57,15 @@ def query_handler(query):
         else:
             return driver_most_q(query)
     
-    
-    
-    return driver_team_q(query)  # This will almost always be the last thing that gets checked. 
-    
+    ##############################
+    #   DRIVER OR TEAM QUERIES   #
+    ##############################
+    return driver_team_q(query)  # This will almost always be the last thing that gets checked.     
         
-    return [{"result": "The following query was not accepted: " + query}]
-    
-        
-    
+###################
+# VERSUS HANDLER  #
+###################
 def versus_q(left, right, query):
-        
     ####################
     # DRIVER VS DRIVER #
     ####################
@@ -173,8 +173,11 @@ def versus_q(left, right, query):
         
     return ["error", "The following query was not accepted: " + query]
 
+#######################
+# DRIVER MOST HANDLER #
+#######################
 def driver_most_q(query):
-    # check the query to see if the series is specified. 
+    # check the query to see if the series is specified, with F1 as the default. 
     series = "F1"
     if "F2" in query or "f2" in query or "Formula 2" in query or "formula 2" in query or "Formula Two" in query or "formula two" in query: 
         series = "F2"
@@ -194,7 +197,7 @@ def driver_most_q(query):
     else:
         return ["error", "Your query was not accepted, we couldn't find the statistic in your query: \n \"" + query + "\""]
     
-    
+    # Check F1 for all the stats.
     if series == "F1":
         if stat == "wins":
             max_wins = 0
@@ -230,7 +233,8 @@ def driver_most_q(query):
             return ["most", "The driver with the most championships in F1 is " + str(max_championships_driver['name']) + " with " + str(max_championships) + " championships."]
         else:
             return ["error", "Your query was not accepted, we couldn't find the statistic in your query: \n \"" + query + "\""]
-            
+    
+    # Check F2 for all the stats.
     elif series == "F2":
         if stat == "wins":
             max_wins = 0
@@ -267,6 +271,7 @@ def driver_most_q(query):
         else:
             return ["error", "Your query was not accepted, we couldn't find the statistic in your query: \n \"" + query + "\""]
         
+    # Check F3 for all the stats.
     elif series == "F3":
         if stat == "wins":
             max_wins = 0
@@ -301,15 +306,21 @@ def driver_most_q(query):
                     max_championships_driver = driver
             return ["most", "The driver with the most championships in F3 is " + str(max_championships_driver['name']) + " with " + str(max_championships) + " championships."]
         else:
+            # If the stat is not found, return an error.
             return ["error", "Your query was not accepted, we couldn't find the statistic in your query: \n \"" + query + "\""]
 
+#######################
+#  TEAM MOST HANDLER  #
+#######################
 def team_most_q(query):
+    # check the query to see if the series is specified, with F1 as the default. 
     series = "F1"
     if "F2" in query or "f2" in query or "Formula 2" in query or "formula 2" in query or "Formula Two" in query or "formula two" in query: 
         series = "F2"
     if "F3" in query or "f3" in query or "Formula 3" in query or "formula 3" in query or "Formula Three" in query or "formula three" in query:
         series = "F3"
     
+    # determine which stat the user is asking for.
     stat = ""
     if "wins" in query or "Wins" in query or "victories" in query or "Victories" in query:
         stat = "wins"
@@ -322,6 +333,7 @@ def team_most_q(query):
     else:
         return ["error", "Your query was not accepted, we couldn't find the statistic in your query: \n \"" + query + "\""]
 
+    # Check F1 for all the stats.
     if series == "F1":
         if stat == "wins":
             max_wins = 0
@@ -358,6 +370,7 @@ def team_most_q(query):
         else:
             return ["most", "Your query was not accepted, we could not determine the stat you were looking for: " + query]
     
+    # Check F2 for all the stats.   
     if series == "F2":
         if stat == "wins":
             max_wins = 0
@@ -394,6 +407,7 @@ def team_most_q(query):
         else:
             return ["error", "Your query was not accepted, we couldn't find the statistic: \"" + stat + "\""]
         
+    # Check F3 for all the stats.
     if series == "F3":
         if stat == "wins":
             max_wins = 0
@@ -428,8 +442,12 @@ def team_most_q(query):
                     max_championships_team = team
             return ["most", "The team with the most championships in F3 is " + str(max_championships_team['name']) + " with " + str(max_championships) + " championships."]
         else:
+            # If the stat is not found, return an error.
             return ["most", "The following query was not accepted, we could not determine the stat you were looking for: " + query]
-    
+
+##########################
+# DRIVER OR TEAM HANDLER #
+##########################
 def driver_team_q(query):
     for driver in f1_drivers:
         if query.lower() == driver['name'].lower():
