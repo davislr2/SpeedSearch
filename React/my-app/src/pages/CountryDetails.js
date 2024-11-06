@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import '../styles/CountryDetails.css';
 
 const CountryDetails = () => {
@@ -29,6 +29,8 @@ const CountryDetails = () => {
 
     return (
         <div className="country-details-container">
+            <Link className='home-button' to='/'>Home</Link>
+            <Link className='back-button' to={`/F1/grandPrix/${year}`}>Back</Link>
             <div className="header-section">
                 <div className="race-info">
                     <h1>{country} Grand Prix - {year}</h1>

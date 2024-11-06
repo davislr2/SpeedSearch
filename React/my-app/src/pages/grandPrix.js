@@ -38,6 +38,8 @@ const GrandPrix = () => {
     return (
         <div className='grand-prix-container'>
             <h1>Grand Prix - {year}</h1>
+            <Link className='home-button' to='/'>Home</Link>
+            <Link className='back-button' to={`/${level}`}>Back</Link>
             <div className="table-container">
                 <table className="grand-prix-table">
                     <thead>

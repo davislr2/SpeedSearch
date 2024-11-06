@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import '../styles/Season.css';
+import { Link } from 'react-router-dom';
 
 const Season = () => {
     const { level, year } = useParams();
@@ -38,6 +39,9 @@ const Season = () => {
     return (
         <div>
             <h1>{level} Championship - {year}</h1>
+            <Link className='home-button' to='/'>Home</Link>
+            {/* Add a back button to navigate back to the level */}
+            <Link className='back-button' to={`/${level}`}>Back</Link>
             <table>
                 <thead>
                     <tr className='seasons-table-header'>
