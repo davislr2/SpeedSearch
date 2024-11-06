@@ -6,7 +6,7 @@
 
 /* Style the search bar container */
 .searchbar-container {
-    margin-top: 50px; /* Adjust the margin as needed */
+    margin-top: 85px; /* Adjust the margin as needed */
     padding: 10px;
     z-index: 2; /* Ensure the search bar is above the header */
     position: relative;

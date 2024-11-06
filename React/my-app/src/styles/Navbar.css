@@ -3,7 +3,7 @@
     background-color: #ff2800;
     overflow: hidden;
     position: fixed;
-    top: 0;
+    top: 60px;
     width: 100%;
     z-index: 1000; /* Make sure it stays on top */
     border: 2px solid black;

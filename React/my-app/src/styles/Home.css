@@ -1,4 +1,40 @@
+@font-face {
+  font-family: 'Racing Font';
+  src: url('../fonts/RaceSport.ttf') format('truetype');
+}
+
 .query-forms-link {
   color: black;
-  margin-left : 10px;
+  margin-left: 10px;
+}
+
+.banner {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 5;
+  margin: 0;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Racing Font', sans-serif; /* Use the custom font */
+  line-height: 0;
+  font-size: 30px;
+  max-height: 60px;
+  display: flex;
+}
+
+.banner-image-left {
+  width: 10%;
+  height: auto;
+  margin-right: 10px;
+}
+
+.banner-image-right {
+  width: 10%;
+  height: auto;
+  margin-left: 10px;
+}
+
+.banner-text {
+  flex: 1;
 }
