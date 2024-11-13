@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles/F1.css';
 import '../App.css';
 import {Link} from 'react-router-dom';
+import '../pages/Driver.js'
+import '../pages/Constructor.js'
+import '../pages/Circuit.js'
 
 function F1() {
     return (
@@ -97,21 +100,25 @@ function F1() {
                 </tr>
             </table>
 
+            <Link to='/F1/drivers' className="header-link">
             <h3>Drivers</h3>
+            </Link>
             <table className='drivers-table'>
-                <tr>
-                    <td>Lewis Hamilton</td>
-                </tr>
+                
             </table>
 
+            <Link to='/F1/constructors' className="header-link">
             <h3>Constructors</h3>
+            </Link>
             <table className='constructors-table'>
                 <tr>
                     <td>Mercedes</td>
                 </tr>
             </table>
-
+            
+            <Link to='/F1/circuits' className="header-link">
             <h3>Circuits</h3>
+            </Link>
             <table className='circuit-table'>
                 <tr>
                     <td>Bahrain International Circuit</td> <td>Jeddah Street Circuit</td> <td>Albert Park</td> <td>Suzuka Circuit</td> <td>Shanghai International Circuit</td>

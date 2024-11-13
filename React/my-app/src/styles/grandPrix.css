@@ -20,11 +20,3 @@
 .country-column {
     min-width: 200px;
 }
-
-.details-link {
-    text-decoration: none;
-    color: black;
-    display: block;
-    width: 100%;
-    padding: 8px;
-}

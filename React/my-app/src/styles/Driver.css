@@ -1,8 +1,12 @@
-body {
-    color: black;
-}
-
-.drivers-table-header {
+/* This would also format the table in F1/F2/F3
+Keep this in mind as we add a list of current drivers to each page.
+One way to change it is to change the table name on the F1/F2/F3 pages.
+Then edit the table on the F1/F2/F3.css file*/
+.drivers-table{
+    display: flex;
+    /*moves where the list is */
+    justify-content: left;
+    align-items: left;
+    margin-bottom: 20px;
     text-align: left;
 }
-
