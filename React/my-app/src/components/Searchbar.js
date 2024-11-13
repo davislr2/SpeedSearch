@@ -59,7 +59,12 @@ const Searchbar = () => {
                             parsedResults.push({ type: responseType, data1: jsonData1 });
                         }
 
+                    } else if (responseType === 'season') {
+                        if (jsonData1 && jsonData2) {
+                            
+                        }
                     }
+
                     
                     
                     else {
@@ -176,6 +181,10 @@ const Searchbar = () => {
                     )
                 }
 
+                if (resultObj.type === 'season') {
+                    
+                }
+
                 if (resultObj.type === "error") {
                     return (
                         <div key={index} className='searchbar-results'>
@@ -186,6 +195,8 @@ const Searchbar = () => {
                         </div>
                     )
                 }
+
+
 
                 return null; // Ensure a return value for other types
             })}
