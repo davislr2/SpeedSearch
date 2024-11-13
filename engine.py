@@ -16,12 +16,16 @@ f2_drivers = []
 f2_teams = []
 f3_drivers = []
 f3_teams = []
+f1_seasons = []
+f2_seasons = []
+f3_seasons = []
+
 
 ########################
 #  LOAD DATA FUNCTION  #
 ########################
 def load_data():
-    global f1_drivers, f1_teams, f2_drivers, f2_teams, f3_drivers, f3_teams
+    global f1_drivers, f1_teams, f2_drivers, f2_teams, f3_drivers, f3_teams, f1_seasons, f2_seasons, f3_seasons
 
     with open('./driver_stats/f1_drivers.json') as f:
         f1_drivers = json.load(f)
@@ -36,6 +40,13 @@ def load_data():
         f3_drivers = json.load(f)
     with open('./constructor_stats/f3_constructors.json') as f:
         f3_teams = json.load(f)
+    with open('./seasons_stats/f1_seasons.json') as f:
+        f1_seasons = json.load(f)
+    with open('./seasons_stats/f2_seasons.json') as f:
+        f2_seasons = json.load(f)
+    with open('./seasons_stats/f3_seasons.json') as f:
+        f3_seasons = json.load(f)
+    
 
 def query_handler(query):	
     ####################
@@ -56,6 +67,12 @@ def query_handler(query):
             return team_most_q(query)
         else:
             return driver_most_q(query)
+    
+    ####################
+    #  SEASON QUERIES  #
+    ####################
+    elif "season" in query or "Season" in query:
+        return season_q(query)
     
     ##############################
     #   DRIVER OR TEAM QUERIES   #
@@ -468,6 +485,39 @@ def driver_team_q(query):
         if query.lower() == team['name'].lower():
             return ["team", str(team)]
 
+####################
+#  SEASON HANDLER  #
+####################
+def season_q(query):
+    level = "F1"
+    if "F2" in query or "f2" in query or "Formula 2" in query or "formula 2" in query or "Formula Two" in query or "formula two" in query: 
+        level = "F2"
+    elif "F3" in query or "f3" in query or "Formula 3" in query or "formula 3" in query or "Formula Three" in query or "formula three" in query:
+        level = "F3"
+
+    # Find the year in the query.
+    year = ""
+    for word in query.split():
+        if word.isdigit():
+            year = str(word)
+            print(year)
+            break
+    
+    if level == "F1":
+        if year in f1_seasons:
+            return ["season", str(f1_seasons[year])]
+        else:
+            return ["error", "The season you are looking for does not exist in the database.", year + " " + level]
+    elif level == "F2":
+        if year in f2_seasons:
+            return ["season", str(f2_seasons[year])]
+        else:
+            return ["error", "The season you are looking for does not exist in the database.", year + " " + level]
+    elif level == "F3":
+        if year in f3_seasons:
+            return ["season", str(f3_seasons[year])]
+        else:
+            return ["error", "The season you are looking for does not exist in the database.", year + " " + level] 
 
 @app.route('/search', methods=['GET'])
 def search():
