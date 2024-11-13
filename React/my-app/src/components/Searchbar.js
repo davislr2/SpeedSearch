@@ -18,6 +18,7 @@ const Searchbar = () => {
                     console.log(response.data); // Log the response data for debugging
 
                     let [responseType, jsonData1, jsonData2] = response.data;
+                    console.log(response.data[2])
                     let parsedResults = [];
 
                     // VERSUS IDENTIFIER
@@ -60,13 +61,10 @@ const Searchbar = () => {
                         }
 
                     } else if (responseType === 'season') {
-                        if (jsonData1 && jsonData2) {
-                            
+                        if (jsonData1) {
+                            console.log("Original jsonData1:", jsonData1);
                         }
-                    }
-
-                    
-                    
+                    } 
                     else {
                         if (jsonData1) {
                             parsedResults.push({ type: responseType, data1: jsonData1 });
