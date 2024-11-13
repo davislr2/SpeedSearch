@@ -1,0 +1,154 @@
+[
+    {
+        "circuit_name": "AUTODROMO ENZO E DINO FERRARI",
+        "circuit_location": "Imola, Emilia-Romagna",
+        "no_corners": "21",
+        "length": "4,909 km",
+        "first_year": "1969",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "AUTODROMO NAZIONALE MONZA",
+        "circuit_location": "Monza, Lombardy",
+        "no_corners": "11",
+        "length": "5,793 km",
+        "first_year": "1949",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "BAHRAIN INTERNATIONAL CIRCUIT",
+        "circuit_location": "Sakhir, Southern Governorate",
+        "no_corners": "15",
+        "length": "5,412 km",
+        "first_year": "2004",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "BAKU CITY CIRCUIT",
+        "circuit_location": "Baku",
+        "no_corners": "20",
+        "length": "6,003 km",
+        "first_year": "2016",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "CIRCUIT DE BARCELONA-CATALUNYA",
+        "circuit_location": "Barcelona, Catalunya",
+        "no_corners": "16",
+        "length": "4,655 km",
+        "first_year": "1991",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "CIRCUIT DE MONACO",
+        "circuit_location": "Monte Carlo",
+        "no_corners": "19",
+        "length": "3,337 km",
+        "first_year": "1950",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "CIRCUIT DE SPA-FRANCORCHAMPS",
+        "circuit_location": "Francorchamps, Liege",
+        "no_corners": "19",
+        "length": "7,004 km",
+        "first_year": "1949",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "CIRCUIT PAUL RICARD",
+        "circuit_location": "Le Castellet, Provence-Alpes-Cote d'Azur",
+        "no_corners": "15",
+        "length": "5,842 km",
+        "first_year": "1971",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "CIRCUIT ZANDVOORT",
+        "circuit_location": "Zandvoort, North Holland",
+        "no_corners": "14",
+        "length": "4,259 km",
+        "first_year": "1952",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "CIRCUITO DE JEREZ",
+        "circuit_location": "Jerez, Cadiz",
+        "no_corners": "13",
+        "length": "4,428 km",
+        "first_year": "1986",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "HUNGARORING",
+        "circuit_location": "Budapest",
+        "no_corners": "14",
+        "length": "4,381 km",
+        "first_year": "1986",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "JEDDAH CORNICHE CIRCUIT",
+        "circuit_location": "",
+        "no_corners": "27",
+        "length": "6,175 km",
+        "first_year": "2021",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "LOSAIL INTERNATIONAL CIRCUIT",
+        "circuit_location": "Doha, Ad-Dawhah",
+        "no_corners": "16",
+        "length": "5,380 km",
+        "first_year": "2004",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "MELBOURNE GRAND PRIX CIRCUIT",
+        "circuit_location": "Melbourne, Victoria",
+        "no_corners": "14",
+        "length": "5,279 km",
+        "first_year": "1996",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "MUGELLO CIRCUIT",
+        "circuit_location": "Mugello, Tuscany",
+        "no_corners": "15",
+        "length": "5,245 km",
+        "first_year": "1976",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "RED BULL RING",
+        "circuit_location": "Spielberg, Styria",
+        "no_corners": "10",
+        "length": "4,318 km",
+        "first_year": "2011",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "SILVERSTONE CIRCUIT",
+        "circuit_location": "Silverstone, Northamptonshire",
+        "no_corners": "6",
+        "length": "2,581 km",
+        "first_year": "1950",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "SOCHI AUTODROM",
+        "circuit_location": "Sochi, Krasnodar Krai",
+        "no_corners": "18",
+        "length": "5,848 km",
+        "first_year": "2014",
+        "last_year": "2021"
+    },
+    {
+        "circuit_name": "YAS MARINA CIRCUIT",
+        "circuit_location": "Yas Island, Abu Dhabi",
+        "no_corners": "16",
+        "length": "5,281 km",
+        "first_year": "2009",
+        "last_year": "2024"
+    }
+]

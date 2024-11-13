@@ -1,0 +1,634 @@
+[
+    {
+        "circuit_name": "A1-RING",
+        "circuit_location": "Spielberg, Styria",
+        "no_corners": "9",
+        "length": "4,326 km",
+        "first_year": "1996",
+        "last_year": "2003"
+    },
+    {
+        "circuit_name": "AINTREE MOTOR RACING CIRCUIT",
+        "circuit_location": "Aintree, Merseyside",
+        "no_corners": "8",
+        "length": "4,828 km",
+        "first_year": "1955",
+        "last_year": "1962"
+    },
+    {
+        "circuit_name": "AUTODROMO DO ESTORIL",
+        "circuit_location": "Estoril, Lisboa Region",
+        "no_corners": "13",
+        "length": "4,182 km",
+        "first_year": "1984",
+        "last_year": "2023"
+    },
+    {
+        "circuit_name": "AUTODROMO INTERNACIONAL NELSON PIQUET",
+        "circuit_location": "Rio de Janeiro",
+        "no_corners": "11",
+        "length": "4,933 km",
+        "first_year": "1978",
+        "last_year": "2004"
+    },
+    {
+        "circuit_name": "AUTODROMO NAZIONALE MONZA",
+        "circuit_location": "Monza, Lombardy",
+        "no_corners": "11",
+        "length": "5,793 km",
+        "first_year": "1949",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "BAKU CITY CIRCUIT",
+        "circuit_location": "Baku",
+        "no_corners": "20",
+        "length": "6,003 km",
+        "first_year": "2016",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "ADELAIDE STREET CIRCUIT",
+        "circuit_location": "Adelaide, South Australia",
+        "no_corners": "14",
+        "length": "3,220 km",
+        "first_year": "1985",
+        "last_year": "2023"
+    },
+    {
+        "circuit_name": "ALGARVE INTERNATIONAL CIRCUIT",
+        "circuit_location": "Portimao, Algarve",
+        "no_corners": "17",
+        "length": "4,692 km",
+        "first_year": "2008",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "AUTODROMO ENZO E DINO FERRARI",
+        "circuit_location": "Imola, Emilia-Romagna",
+        "no_corners": "21",
+        "length": "4,909 km",
+        "first_year": "1969",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "AUTODROMO JOSE CARLOS PACE",
+        "circuit_location": "Interlagos, Sao Paulo",
+        "no_corners": "15",
+        "length": "4,309 km",
+        "first_year": "1973",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "AVUS",
+        "circuit_location": "Berlin",
+        "no_corners": "4",
+        "length": "2,639 km",
+        "first_year": "1959",
+        "last_year": "1995"
+    },
+    {
+        "circuit_name": "BRANDS HATCH",
+        "circuit_location": "Fawkham, Kent",
+        "no_corners": "9",
+        "length": "3,916 km",
+        "first_year": "1964",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "AIN-DIAB",
+        "circuit_location": "Ain Diab, Casablanca",
+        "no_corners": "N/A",
+        "length": "7,618 km",
+        "first_year": "1958",
+        "last_year": "1958"
+    },
+    {
+        "circuit_name": "ANDERSTORP RACEWAY",
+        "circuit_location": "Anderstorp, Jonkoping County",
+        "no_corners": "8",
+        "length": "4,025 km",
+        "first_year": "1971",
+        "last_year": "2007"
+    },
+    {
+        "circuit_name": "AUTODROMO HERMANOS RODRIGUEZ",
+        "circuit_location": "Mexico City",
+        "no_corners": "17",
+        "length": "2,093 km",
+        "first_year": "1963",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "AUTODROMO JUAN Y OSCAR GALVEZ",
+        "circuit_location": "Buenos Aires",
+        "no_corners": "19",
+        "length": "3,353 km",
+        "first_year": "1953",
+        "last_year": "1999"
+    },
+    {
+        "circuit_name": "BAHRAIN INTERNATIONAL CIRCUIT",
+        "circuit_location": "Sakhir, Southern Governorate",
+        "no_corners": "15",
+        "length": "5,412 km",
+        "first_year": "2004",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "BUDDH INTERNATIONAL CIRCUIT",
+        "circuit_location": "Greater Noida, Uttar Pradesh",
+        "no_corners": "16",
+        "length": "5,140 km",
+        "first_year": "2011",
+        "last_year": "2023"
+    },
+    {
+        "circuit_name": "CAESARS PALACE",
+        "circuit_location": "Las Vegas, Nevada",
+        "no_corners": "14",
+        "length": "3,650 km",
+        "first_year": "1981",
+        "last_year": "1982"
+    },
+    {
+        "circuit_name": "CIRCUIT BREMGARTEN",
+        "circuit_location": "Bern",
+        "no_corners": "13",
+        "length": "7,290 km",
+        "first_year": "1949",
+        "last_year": "1954"
+    },
+    {
+        "circuit_name": "CIRCUIT DE NEVERS MAGNY-COURS",
+        "circuit_location": "Magny Cours, Bourgogne-Franche-Comte",
+        "no_corners": "20",
+        "length": "4,411 km",
+        "first_year": "1991",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "CIRCUIT MONT-TREMBLANT",
+        "circuit_location": "Mont-Tremblant, Quebec",
+        "no_corners": "17",
+        "length": "4,260 km",
+        "first_year": "1968",
+        "last_year": "1970"
+    },
+    {
+        "circuit_name": "CIRCUIT ZANDVOORT",
+        "circuit_location": "Zandvoort, North Holland",
+        "no_corners": "14",
+        "length": "4,259 km",
+        "first_year": "1952",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "CIRCUITO DEL JARAMA",
+        "circuit_location": "Madrid",
+        "no_corners": "11",
+        "length": "3,850 km",
+        "first_year": "1968",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "CANADIAN TIRE MOTORSPORT PARK",
+        "circuit_location": "Bowmanville, Ontario",
+        "no_corners": "10",
+        "length": "3,957 km",
+        "first_year": "1967",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "CIRCUIT DE BARCELONA-CATALUNYA",
+        "circuit_location": "Barcelona, Catalunya",
+        "no_corners": "16",
+        "length": "4,655 km",
+        "first_year": "1991",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "CIRCUIT DE SPA-FRANCORCHAMPS",
+        "circuit_location": "Francorchamps, Liege",
+        "no_corners": "19",
+        "length": "7,004 km",
+        "first_year": "1949",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "CIRCUIT OF THE AMERICAS",
+        "circuit_location": "Austin, Texas",
+        "no_corners": "20",
+        "length": "5,513 km",
+        "first_year": "2012",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "CIRCUITO DA BOAVISTA",
+        "circuit_location": "Porto, Norte",
+        "no_corners": "21",
+        "length": "4,720 km",
+        "first_year": "1958",
+        "last_year": "2013"
+    },
+    {
+        "circuit_name": "DETROIT STREET CIRCUIT",
+        "circuit_location": "Detroit, Michigan",
+        "no_corners": "9",
+        "length": "2,647.4 km",
+        "first_year": "1982",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "CHARADE CIRCUIT",
+        "circuit_location": "Clermont-Ferrand, Auvergne-Rhone-Alpes",
+        "no_corners": "48",
+        "length": "8,055 km",
+        "first_year": "1959",
+        "last_year": "1974"
+    },
+    {
+        "circuit_name": "CIRCUIT DE MONACO",
+        "circuit_location": "Monte Carlo",
+        "no_corners": "19",
+        "length": "3,337 km",
+        "first_year": "1950",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "CIRCUIT GILLES VILLENEUVE",
+        "circuit_location": "Montreal, Quebec",
+        "no_corners": "14",
+        "length": "4,361 km",
+        "first_year": "1978",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "CIRCUIT PAUL RICARD",
+        "circuit_location": "Le Castellet, Provence-Alpes-Cote d'Azur",
+        "no_corners": "15",
+        "length": "5,842 km",
+        "first_year": "1971",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "CIRCUITO DE JEREZ",
+        "circuit_location": "Jerez, Cadiz",
+        "no_corners": "13",
+        "length": "4,428 km",
+        "first_year": "1986",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "DIJON-PRENOIS",
+        "circuit_location": "Prenois, Bourgogne-Franche-Comte",
+        "no_corners": "9",
+        "length": "3,801 km",
+        "first_year": "1974",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "DONINGTON PARK",
+        "circuit_location": "Castle Donington, Leicestershire",
+        "no_corners": "12",
+        "length": "4,003 km",
+        "first_year": "1979",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "FUJI SPEEDWAY",
+        "circuit_location": "Fuji, Shizuoka Prefecture",
+        "no_corners": "16",
+        "length": "4,563 km",
+        "first_year": "1976",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "INDIANAPOLIS MOTOR SPEEDWAY",
+        "circuit_location": "Indianapolis, Indiana",
+        "no_corners": "13",
+        "length": "3,925 km",
+        "first_year": "1950",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "KOREA INTERNATIONAL CIRCUIT",
+        "circuit_location": "Yeongam, South Jeolla Province",
+        "no_corners": "18",
+        "length": "5,615 km",
+        "first_year": "2010",
+        "last_year": "2013"
+    },
+    {
+        "circuit_name": "LOSAIL INTERNATIONAL CIRCUIT",
+        "circuit_location": "Doha, Ad-Dawhah",
+        "no_corners": "16",
+        "length": "5,380 km",
+        "first_year": "2004",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "MIAMI INTERNATIONAL AUTODROME",
+        "circuit_location": "Miami Gardens, Florida",
+        "no_corners": "19",
+        "length": "5,410 km",
+        "first_year": "2022",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "DOWNTOWN LAS VEGAS STREET CIRCUIT",
+        "circuit_location": "Las Vegas, Nevada",
+        "no_corners": "17",
+        "length": "6,201 km",
+        "first_year": "2023",
+        "last_year": "2023"
+    },
+    {
+        "circuit_name": "HOCKENHEIMRING",
+        "circuit_location": "Hockenheim, Baden-Wurttemberg",
+        "no_corners": "17",
+        "length": "4,574 km",
+        "first_year": "1957",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "ISTANBUL PARK",
+        "circuit_location": "Tuzla, Istanbul",
+        "no_corners": "14",
+        "length": "5,338 km",
+        "first_year": "2005",
+        "last_year": "2021"
+    },
+    {
+        "circuit_name": "KYALAMI",
+        "circuit_location": "Midrand, Gauteng",
+        "no_corners": "13",
+        "length": "4,522 km",
+        "first_year": "1967",
+        "last_year": "2010"
+    },
+    {
+        "circuit_name": "MARINA BAY STREET CIRCUIT",
+        "circuit_location": "Singapore, Singapore",
+        "no_corners": "23",
+        "length": "5,065 km",
+        "first_year": "2008",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "MONSANTO PARK CIRCUIT",
+        "circuit_location": "Lisbon",
+        "no_corners": "9",
+        "length": "5,425 km",
+        "first_year": "1959",
+        "last_year": "1959"
+    },
+    {
+        "circuit_name": "FAIR PARK",
+        "circuit_location": "Dallas, Texas",
+        "no_corners": "N/A",
+        "length": "3,901 km",
+        "first_year": "1984",
+        "last_year": "1984"
+    },
+    {
+        "circuit_name": "HUNGARORING",
+        "circuit_location": "Budapest",
+        "no_corners": "14",
+        "length": "4,381 km",
+        "first_year": "1986",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "JEDDAH CORNICHE CIRCUIT",
+        "circuit_location": "",
+        "no_corners": "27",
+        "length": "6,175 km",
+        "first_year": "2021",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "LE MANS",
+        "circuit_location": "Le Mans, Pays de la Loire",
+        "no_corners": "38",
+        "length": "1,3626 km",
+        "first_year": "1923",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "MELBOURNE GRAND PRIX CIRCUIT",
+        "circuit_location": "Melbourne, Victoria",
+        "no_corners": "14",
+        "length": "5,279 km",
+        "first_year": "1996",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "MONTJUIC CIRCUIT",
+        "circuit_location": "Montjuic, Catalunya",
+        "no_corners": "12",
+        "length": "3,790 km",
+        "first_year": "1951",
+        "last_year": "1975"
+    },
+    {
+        "circuit_name": "MUGELLO CIRCUIT",
+        "circuit_location": "Mugello, Tuscany",
+        "no_corners": "15",
+        "length": "5,245 km",
+        "first_year": "1976",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "OKAYAMA INTERNATIONAL CIRCUIT",
+        "circuit_location": "Mimasaka, Okayama Prefecture",
+        "no_corners": "13",
+        "length": "3,703 km",
+        "first_year": "1994",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "PESCARA CIRCUIT",
+        "circuit_location": "Pescara, Abruzzo",
+        "no_corners": "N/A",
+        "length": "2,5579 km",
+        "first_year": "1957",
+        "last_year": "1957"
+    },
+    {
+        "circuit_name": "RED BULL RING",
+        "circuit_location": "Spielberg, Styria",
+        "no_corners": "10",
+        "length": "4,318 km",
+        "first_year": "2011",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "ROUEN-LES-ESSARTS",
+        "circuit_location": "Grand-Couronne, Normandy",
+        "no_corners": "13",
+        "length": "5,543 km",
+        "first_year": "1952",
+        "last_year": "1968"
+    },
+    {
+        "circuit_name": "SHANGHAI INTERNATIONAL CIRCUIT",
+        "circuit_location": "Shanghai",
+        "no_corners": "16",
+        "length": "5,451 km",
+        "first_year": "2004",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "NIVELLES-BAULERS",
+        "circuit_location": "Brussels",
+        "no_corners": "7",
+        "length": "3,724 km",
+        "first_year": "1972",
+        "last_year": "1974"
+    },
+    {
+        "circuit_name": "OSTERREICHRING",
+        "circuit_location": "Spielberg, Styria",
+        "no_corners": "N/A",
+        "length": "5,853 km",
+        "first_year": "1970",
+        "last_year": "1994"
+    },
+    {
+        "circuit_name": "PHOENIX STREET CIRCUIT",
+        "circuit_location": "Phoenix, Arizona",
+        "no_corners": "N/A",
+        "length": "3,721 km",
+        "first_year": "1989",
+        "last_year": "1991"
+    },
+    {
+        "circuit_name": "REIMS-GUEUX",
+        "circuit_location": "Reims, Grand Est",
+        "no_corners": "7",
+        "length": "8,302 km",
+        "first_year": "1950",
+        "last_year": "1966"
+    },
+    {
+        "circuit_name": "SEBRING INTERNATIONAL RACEWAY",
+        "circuit_location": "Sebring, Florida",
+        "no_corners": "17",
+        "length": "6,019 km",
+        "first_year": "1959",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "SILVERSTONE CIRCUIT",
+        "circuit_location": "Silverstone, Northamptonshire",
+        "no_corners": "6",
+        "length": "2,581 km",
+        "first_year": "1950",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "NURBURGRING",
+        "circuit_location": "Nurburg, Rhineland-Palatinate",
+        "no_corners": "N/A",
+        "length": "3,629 km",
+        "first_year": "1951",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "PEDRALBES CIRCUIT",
+        "circuit_location": "Barcelona, Catalunya",
+        "no_corners": "6",
+        "length": "6,316 km",
+        "first_year": "1951",
+        "last_year": "1954"
+    },
+    {
+        "circuit_name": "PRINCE GEORGE CIRCUIT",
+        "circuit_location": "East London, Cape Province",
+        "no_corners": "N/A",
+        "length": "3,919 km",
+        "first_year": "1962",
+        "last_year": "1965"
+    },
+    {
+        "circuit_name": "RIVERSIDE INTERNATIONAL RACEWAY",
+        "circuit_location": "Riverside, California",
+        "no_corners": "9",
+        "length": "4,216 km",
+        "first_year": "1958",
+        "last_year": "1988"
+    },
+    {
+        "circuit_name": "SEPANG INTERNATIONAL CIRCUIT",
+        "circuit_location": "Sepang",
+        "no_corners": "15",
+        "length": "5,543 km",
+        "first_year": "1999",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "SOCHI AUTODROM",
+        "circuit_location": "Sochi, Krasnodar Krai",
+        "no_corners": "18",
+        "length": "5,848 km",
+        "first_year": "2014",
+        "last_year": "2021"
+    },
+    {
+        "circuit_name": "STREETS OF LONG BEACH",
+        "circuit_location": "Long Beach, California",
+        "no_corners": "12",
+        "length": "3,168 km",
+        "first_year": "1976",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "WATKINS GLEN INTERNATIONAL",
+        "circuit_location": "Watkins Glen, New York",
+        "no_corners": "11",
+        "length": "5,552 km",
+        "first_year": "1957",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "ZOLDER",
+        "circuit_location": "Heusden-Zolder, Limburg",
+        "no_corners": "10",
+        "length": "4,000 km",
+        "first_year": "1973",
+        "last_year": "2022"
+    },
+    {
+        "circuit_name": "SUZUKA INTERNATIONAL RACING COURSE",
+        "circuit_location": "Suzuka , Mie Prefecture",
+        "no_corners": "18",
+        "length": "5,807 km",
+        "first_year": "1987",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "YAS MARINA CIRCUIT",
+        "circuit_location": "Yas Island, Abu Dhabi",
+        "no_corners": "16",
+        "length": "5,281 km",
+        "first_year": "2009",
+        "last_year": "2024"
+    },
+    {
+        "circuit_name": "VALENCIA STREET CIRCUIT",
+        "circuit_location": "Valencia, Valencia",
+        "no_corners": "25",
+        "length": "5,419 km",
+        "first_year": "2008",
+        "last_year": "2023"
+    },
+    {
+        "circuit_name": "ZELTWEG AIRFIELD",
+        "circuit_location": "Zeltweg, Styria",
+        "no_corners": "4",
+        "length": "3,200 km",
+        "first_year": "1964",
+        "last_year": "1964"
+    }
+]
