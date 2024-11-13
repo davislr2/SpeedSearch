@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import '../styles/Searchbar.css'; // Import the CSS file
+import '../styles/Season.css'; // Import the CSS file
 
 const Searchbar = () => {
     const [searchTerm, setSearchTerm] = useState('');
@@ -16,9 +17,7 @@ const Searchbar = () => {
                 try {
                     const response = await axios.get(`http://127.0.0.1:5000/search?query=${searchTerm}`);
                     console.log(response.data); // Log the response data for debugging
-
                     let [responseType, jsonData1, jsonData2] = response.data;
-                    console.log(response.data[2])
                     let parsedResults = [];
 
                     // VERSUS IDENTIFIER
@@ -61,8 +60,24 @@ const Searchbar = () => {
                         }
 
                     } else if (responseType === 'season') {
-                        if (jsonData1) {
-                            console.log("Original jsonData1:", jsonData1);
+                        if (jsonData1 && jsonData2) {
+                            try {
+                                jsonData1 = jsonData1.replace(/'/g, '"');
+                                parsedResults.push({ type: responseType, data1: JSON.parse(jsonData1), data2: jsonData2 });
+                            } catch (parseError) {
+                                console.error("JSON parse error:", parseError);
+                                const errorPosition = parseError.message.match(/\d+/g);
+                                if (errorPosition) {
+                                    const errorIndex = parseInt(errorPosition[0]);
+                                    const errorChar = jsonData1[errorIndex];
+                                    console.error("Error character:", errorChar);
+                                    
+                                    const start = Math.max(0, errorIndex - 10);
+                                    const end = Math.min(jsonData1.length, errorIndex + 10);
+
+                                    console.error("Context:", jsonData1.substring(start, end));
+                                }
+                            }
                         }
                     } 
                     else {
@@ -180,6 +195,43 @@ const Searchbar = () => {
                 }
 
                 if (resultObj.type === 'season') {
+                    let year = resultObj.data2.split(" ")[0];
+                    let level = resultObj.data2.split(" ")[1];
+                    let firstDriverResults = Object.values(resultObj.data1)[0];
+                    let raceNames = firstDriverResults.map(result => result[0]);
+                    
+                    return (
+                        <div>
+                            <h1>{level} Championship - {year}</h1>
+                            <table>
+                                <thead>
+                                    <tr className='seasons-table-header'>
+                                        <th>Driver</th>
+                                        {raceNames.map((race, index) => (
+                                            <th key={index}>{race}</th>
+                                        ))}
+                                        <th>Total Points</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {Object.entries(resultObj.data1).map(([driver, results]) => {
+                                        const totalPoints = results.reduce((sum, result) => sum + parseInt(result[1]), 0);
+                                        return (
+                                            <tr key={driver}>
+                                                <td>{driver}</td>
+                                                {raceNames.map((_, index) => (
+                                                    <td key={index}>
+                                                        {results[index] ? results[index][1] : 0}
+                                                    </td>
+                                                ))}
+                                                <td>{totalPoints}</td>
+                                            </tr>
+                                        );
+                                    })}
+                                </tbody>
+                            </table>
+                        </div>
+                    )
                     
                 }
 

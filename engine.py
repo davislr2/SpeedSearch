@@ -505,19 +505,19 @@ def season_q(query):
     
     if level == "F1":
         if year in f1_seasons:
-            return ["season", str(f1_seasons[year])]
+            return ["season", str(f1_seasons[year]), year + " " + level]
         else:
-            return ["error", "The season you are looking for does not exist in the database.", year + " " + level]
+            return ["error", "The season you are looking for does not exist in the database."]
     elif level == "F2":
         if year in f2_seasons:
-            return ["season", str(f2_seasons[year])]
+            return ["season", str(f2_seasons[year]), year + " " + level]
         else:
-            return ["error", "The season you are looking for does not exist in the database.", year + " " + level]
+            return ["error", "The season you are looking for does not exist in the database."]
     elif level == "F3":
         if year in f3_seasons:
-            return ["season", str(f3_seasons[year])]
+            return ["season", str(f3_seasons[year]), year + " " + level]
         else:
-            return ["error", "The season you are looking for does not exist in the database.", year + " " + level] 
+            return ["error", "The season you are looking for does not exist in the database."] 
 
 @app.route('/search', methods=['GET'])
 def search():
