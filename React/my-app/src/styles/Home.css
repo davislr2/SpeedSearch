@@ -8,6 +8,10 @@
   margin-left: 10px;
 }
 
+.body {
+  margin-bottom: 10px;
+}
+
 .banner {
   background-color: #f0f0f0;
   color: #333;
@@ -38,3 +42,4 @@
 .banner-text {
   flex: 1;
 }
+

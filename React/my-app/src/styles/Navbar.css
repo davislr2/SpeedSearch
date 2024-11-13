@@ -2,8 +2,8 @@
 .navbar {
     background-color: #ff2800;
     overflow: hidden;
-    position: fixed;
-    top: 60px;
+    position: relative;
+    top: 0px;
     width: 100%;
     z-index: 1000; /* Make sure it stays on top */
     border: 2px solid black;
