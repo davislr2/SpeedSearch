@@ -30,6 +30,19 @@ const Constructor = () => {
         return <div>Loading...</div>;
     }
 
+    constructors.sort((a, b) => {
+        const aLast = a.end_year;
+        const bLast = b.end_year;
+
+        if (aLast > bLast) {
+            return -1;
+        }
+        if (aLast < bLast) {
+            return 1;
+        }
+        return 0;
+    })
+
     return (
         <div className='constructors-table'>
             <tbody>

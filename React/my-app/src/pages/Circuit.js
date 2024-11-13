@@ -30,6 +30,7 @@ const Circuit = () => {
         return <div>Loading...</div>;
     }
 
+
     return (
         <div className='circuit-table'>
             <tbody>

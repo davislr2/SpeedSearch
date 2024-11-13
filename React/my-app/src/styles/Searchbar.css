@@ -24,6 +24,9 @@
     list-style-type: none;
     padding: 40px, 65px, 40px, 65px;
     margin: 0px;
+    margin-bottom: 20px;
+    max-width: 100%;
+    overflow: scroll;
 }
 
 .searchbar-results li {

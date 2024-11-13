@@ -30,6 +30,19 @@ const Driver = () => {
         return <div>Loading...</div>;
     }
 
+    drivers.sort((a, b) => {
+        const aLast = a.last_year;
+        const bLast = b.last_year;
+
+        if (aLast > bLast) {
+            return -1;
+        }
+        if (aLast < bLast) {
+            return 1;
+        }
+        return 0;
+    })
+
     return (
         <div className='drivers-table'>
             <tbody>
@@ -39,6 +52,7 @@ const Driver = () => {
                         className="details-link">
                         {driver.name}
                         </Link>
+                        {console.log(driver)}
                     </tr>
                 ))}
             </tbody>

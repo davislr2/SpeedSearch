@@ -66,17 +66,6 @@ const Searchbar = () => {
                                 parsedResults.push({ type: responseType, data1: JSON.parse(jsonData1), data2: jsonData2 });
                             } catch (parseError) {
                                 console.error("JSON parse error:", parseError);
-                                const errorPosition = parseError.message.match(/\d+/g);
-                                if (errorPosition) {
-                                    const errorIndex = parseInt(errorPosition[0]);
-                                    const errorChar = jsonData1[errorIndex];
-                                    console.error("Error character:", errorChar);
-                                    
-                                    const start = Math.max(0, errorIndex - 10);
-                                    const end = Math.min(jsonData1.length, errorIndex + 10);
-
-                                    console.error("Context:", jsonData1.substring(start, end));
-                                }
                             }
                         }
                     } 
@@ -201,7 +190,7 @@ const Searchbar = () => {
                     let raceNames = firstDriverResults.map(result => result[0]);
                     
                     return (
-                        <div>
+                        <div className = 'searchbar-results'>
                             <h1>{level} Championship - {year}</h1>
                             <table>
                                 <thead>
