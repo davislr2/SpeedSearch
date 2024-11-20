@@ -88,6 +88,11 @@ const Searchbar = () => {
         }
     };
 
+    const clearSearch = () => {
+        setSearchTerm('');
+        setResults([]);
+    };
+
     return (
         <div className='searchbar-container'>
             <input
@@ -98,6 +103,8 @@ const Searchbar = () => {
                 onKeyPress={handleKeyPress}
                 className='searchbar-input'
             />
+            <button onClick={clearSearch} className='clear-button'>Clear</button>
+
             {results && results.map((resultObj, index) => {
                 // Defining function to map over results and render them.
                 if (resultObj.type === 'driver_versus') {

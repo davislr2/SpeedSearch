@@ -3,14 +3,46 @@
   src: url('../fonts/RaceSport.ttf') format('truetype');
 }
 
-.query-forms-link {
-  color: black;
-  margin-left: 10px;
+.body {
   margin-bottom: 10px;
 }
 
-.body {
+.car-image-container {
+  flex: 1;
+  text-align: center;
   margin-bottom: 10px;
+  margin-right: 0;
+}
+
+.home-text {
+  flex: 1;
+  text-align: center;
+  padding: 20px 20px 0px 20px;
+}
+
+.query-forms {
+  text-align: left;
+  padding: 5px 20px 20px 20px;
+  max-width: 600px; /* Optional: limit the width of the query forms */
+}
+
+.query-forms-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.query-forms h1 {
+  font-size: 1.5em;
+}
+
+.query-forms ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.query-forms li {
+  margin: 5px 0;
 }
 
 .banner {

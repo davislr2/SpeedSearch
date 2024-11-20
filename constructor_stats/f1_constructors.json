@@ -40,36 +40,6 @@
         "best_championship_position": 1
     },
     {
-        "name": "AGS",
-        "points": 2.0,
-        "wins": 0,
-        "poles": 0,
-        "start_year": 1986,
-        "end_year": 1991,
-        "championships": 0,
-        "best_championship_position": 12
-    },
-    {
-        "name": "ALFA ROMEO",
-        "points": 199.0,
-        "wins": 10,
-        "poles": 12,
-        "start_year": 1950,
-        "end_year": 2023,
-        "championships": 0,
-        "best_championship_position": 6
-    },
-    {
-        "name": "ALPHATAURI",
-        "points": 309.0,
-        "wins": 1,
-        "poles": 0,
-        "start_year": 2020,
-        "end_year": 2023,
-        "championships": 0,
-        "best_championship_position": 6
-    },
-    {
         "name": "ALPINE",
         "points": 461.0,
         "wins": 1,
@@ -727,16 +697,6 @@
         "start_year": 2005,
         "end_year": 2024,
         "championships": 6,
-        "best_championship_position": 1
-    },
-    {
-        "name": "RENAULT",
-        "points": 1777.0,
-        "wins": 35,
-        "poles": 51,
-        "start_year": 1977,
-        "end_year": 2020,
-        "championships": 2,
         "best_championship_position": 1
     },
     {
