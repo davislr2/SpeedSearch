@@ -9,7 +9,7 @@ const Constructor = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            try{
+            try {
                 const response = await fetch(`/data/${level}_constructors.json`)
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
@@ -18,13 +18,13 @@ const Constructor = () => {
                 const construcorNames = data;
 
                 setConstructors(construcorNames)
-            } catch (error){
+            } catch (error) {
                 console.error("Error fetching data", error);
             }
         };
 
         fetchData();
-    },  [level]);
+    }, [level]);
 
     if (!constructors) {
         return <div>Loading...</div>;
@@ -44,18 +44,22 @@ const Constructor = () => {
     })
 
     return (
-        <div className='constructors-table'>
-            <tbody>
-                {constructors.map((constructor) => (
-                    <tr key={constructor.name}>
-                        <Link to = {`${constructor.name}`}
-                        className ="details-link">
-                        {constructor.name}
-                        </Link>
-                        {console.log(constructor)}
-                    </tr>
-                ))}
-            </tbody>
+        <div className='constructor-header'>
+            <h1>Constructors</h1>
+            <Link className='home-button' to='/'>Home</Link>
+            <Link className='back-button' to={`/${level}`}>Back</Link>
+
+            <div className='constructors-table'>
+                    {constructors.map((constructor) => (
+                        <div key={constructor.name} className="grid">
+                            <Link to={`${constructor.name}`}
+                                className="details-link">
+                                {constructor.name}
+                            </Link>
+                            {console.log(constructor)}
+                        </div>
+                    ))}
+            </div>
         </div>
     );
 };

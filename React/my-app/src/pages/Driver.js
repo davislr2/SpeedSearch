@@ -10,7 +10,7 @@ const Driver = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            try{
+            try {
                 const response = await fetch(`/data/${level}_drivers.json`);
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
@@ -19,13 +19,13 @@ const Driver = () => {
                 const driverNames = data;
 
                 setDrivers(driverNames)
-            } catch (error){
+            } catch (error) {
                 console.error("Error fetching data", error);
             }
         };
 
         fetchData();
-    },  [level]);
+    }, [level]);
 
     if (!drivers) {
         return <div>Loading...</div>;
@@ -45,20 +45,22 @@ const Driver = () => {
     })
 
     return (
-        <div className='drivers-table'>
+        <div className='driver-header'>
+            <h1>Drivers</h1>
             <Link className='home-button' to='/'>Home</Link>
-            <Link className='back-button' to='/F1/'>Back</Link>
-            <tbody>
+            <Link className='back-button' to={`/${level}`}>Back</Link>
+
+            <div className='drivers-table'>
                 {drivers.map((driver) => (
-                    <tr key={driver.name}>
-                        <Link to = {`${driver.name}`}
-                        className="details-link">
-                        {driver.name}
+                    <div key={driver.name} className="grid">
+                        <Link to={`${driver.name}`}
+                            className="details-link">
+                            {driver.name}
                         </Link>
                         {console.log(driver)}
-                    </tr>
+                    </div>
                 ))}
-            </tbody>
+            </div>
         </div>
     );
 };

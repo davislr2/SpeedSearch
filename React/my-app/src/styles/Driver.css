@@ -2,12 +2,15 @@
 Keep this in mind as we add a list of current drivers to each page.
 One way to change it is to change the table name on the F1/F2/F3 pages.
 Then edit the table on the F1/F2/F3.css file*/
+h1{
+    display: inline-grid;
+    color: #ff2800
+}
+
 .drivers-table{
-    display: flex;
-    /*moves where the list is */
-    justify-content: left;
-    align-items: left;
-    margin-bottom: 20px;
-    text-align: left;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 1rem;
+    padding: 1rem;
     color : inherit;
 }

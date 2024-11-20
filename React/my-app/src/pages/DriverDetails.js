@@ -32,7 +32,7 @@ const DriverDetails = () => {
         <div className="driver-details-container">
             <div className="header-section">
                 <Link className='home-button' to='/'>Home</Link>
-                <Link className='back-button' to='/F1/drivers'>Back</Link>
+                <Link className='back-button' to={`/${level}/drivers`}>Back</Link>
                 <h1>{details.name}</h1>
             </div>
             <div className="details-table-container">

@@ -9,7 +9,7 @@ const Circuit = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            try{
+            try {
                 const response = await fetch(`/data/${level}_circuits.json`);
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
@@ -18,11 +18,11 @@ const Circuit = () => {
                 const circuitNames = data;
 
                 setCircuits(circuitNames)
-            } catch (error){
+            } catch (error) {
                 console.error("Error fetching data", error);
             }
         };
-        
+
         fetchData();
     }, [level]);
 
@@ -32,18 +32,22 @@ const Circuit = () => {
 
 
     return (
-        <div className='circuit-table'>
-            <tbody>
+        <div className='circuit-header'>
+            <h1>Circuits</h1>
+            <Link className='home-button' to='/'>Home</Link>
+            <Link className='back-button' to={`/${level}`}>Back</Link>
+
+            <div className='circuit-table'>
                 {circuits.map((circuit) => (
-                    <tr key={circuit.circuit_name}>
-                        <Link to = {`${circuit.circuit_name}`}
-                        className="details-link">
-                        {circuit.circuit_name}
+                    <div key={circuit.circuit_name} className="grid">
+                        <Link to={`${circuit.circuit_name}`}
+                            className="details-link">
+                            {circuit.circuit_name}
                         </Link>
                         {console.log(circuit)}
-                    </tr>
+                    </div>
                 ))}
-            </tbody>
+            </div>
         </div>
     );
 };

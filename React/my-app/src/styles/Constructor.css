@@ -1,9 +1,11 @@
-.constructor-table{
-    display: flex;
-    /*moves where the list is */
-    justify-content: left;
-    align-items: left;
-    margin-bottom: 20px;
-    text-align: left;
+h1{
+    display: inline-grid;
+    color: #ff2800
+}
+.constructors-table{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 1rem;
+    padding: 1rem;
     color : inherit;
 }

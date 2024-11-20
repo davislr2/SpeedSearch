@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import '../styles/ConstructorDetails.css';
 
 const ConstructorDetails = () => {
@@ -30,6 +30,8 @@ const ConstructorDetails = () => {
     return(
         <div className="constructor-details-container">
             <div className="header-section">
+            <Link className='home-button' to='/'>Home</Link>
+                <Link className='back-button' to={`/${level}/constructors`}>Back</Link>
                 <h1>{details.name}</h1>
             </div>
             <div className="details-table-container">

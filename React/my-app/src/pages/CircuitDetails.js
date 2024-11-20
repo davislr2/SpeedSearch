@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import '../styles/CircuitDetails.css';
 
 const CircuitDetails = () => {
@@ -21,15 +21,17 @@ const CircuitDetails = () => {
         };
 
         fetchCircuitDetails();
-    },  [level, name]);
+    }, [level, name]);
 
-    if (!details){
+    if (!details) {
         return <div> Loading details...</div>;
     }
 
     return (
         <div className="circuit-details-container">
             <div className="header-section">
+                <Link className='home-button' to='/'>Home</Link>
+                <Link className='back-button' to={`/${level}/circuits`}>Back</Link>
                 <h1>{details.circuit_name}</h1>
             </div>
             <div className="details-table-container">
