@@ -7,6 +7,7 @@ const Circuit = () => {
     const { level } = useParams();
     const [circuits, setCircuits] = useState(null);
 
+    // Fetch data from the API
     useEffect(() => {
         const fetchData = async () => {
             try{
@@ -33,9 +34,14 @@ const Circuit = () => {
 
     return (
         <div className='circuit-table'>
+            {/* Back and Home buttons */}
+            <Link className='home-button' to='/'>Home</Link>
+            <Link className='back-button' to={`/F1/`}>Back</Link>
             <tbody>
+                {/*map through the circuit names and print them in a table*/}
                 {circuits.map((circuit) => (
                     <tr key={circuit.circuit_name}>
+                        {/*Link to the circuit details page*/}
                         <Link to = {`${circuit.circuit_name}`}
                         className="details-link">
                         {circuit.circuit_name}

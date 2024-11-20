@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import '../styles/ConstructorDetails.css';
+import { Link } from 'react-router-dom';
 
 const ConstructorDetails = () => {
     const {level, name } = useParams();
     const [ details, setDetails] = useState(null);
 
+    // Fetch data from json file based on the level
     useEffect(() => {
         const fetchConstructorDetails = async () => {
             try{
@@ -29,9 +31,14 @@ const ConstructorDetails = () => {
 
     return(
         <div className="constructor-details-container">
+            {/* Print the constructor name */}
             <div className="header-section">
+                {/* Back and home buttons */}
+                <Link className='home-button' to='/'>Home</Link>
+                <Link className='back-button' to={`/F1/constructors`}>Back</Link>
                 <h1>{details.name}</h1>
             </div>
+            {/* Print the constructor details */}
             <div className="details-table-container">
                 <table className="details-table>">
                     <tbody>
