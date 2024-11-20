@@ -11,7 +11,7 @@ function F1() {
         <div className="F1">
             <h1>Formula One</h1>
             <Link className='home-button' to='/'>Home</Link>
-            <Link className='back-button' to='/'>Back</Link>
+            <Link className='back-button' to='../'>Back</Link>
             <h3>Seasons</h3>
             <table className='seasons-table'>
                 {/* 1950-1964 */}

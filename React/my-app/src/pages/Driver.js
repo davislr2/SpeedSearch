@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import '../styles/Driver.css';
+import '../App.css';
 import { Link } from 'react-router-dom';
 
 const Driver = () => {
@@ -45,6 +46,8 @@ const Driver = () => {
 
     return (
         <div className='drivers-table'>
+            <Link className='home-button' to='/'>Home</Link>
+            <Link className='back-button' to='/F1/'>Back</Link>
             <tbody>
                 {drivers.map((driver) => (
                     <tr key={driver.name}>

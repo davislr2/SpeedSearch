@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import '../styles/DriverDetails.css';
 
 const DriverDetails = () => {
@@ -30,6 +31,8 @@ const DriverDetails = () => {
     return (
         <div className="driver-details-container">
             <div className="header-section">
+                <Link className='home-button' to='/'>Home</Link>
+                <Link className='back-button' to='/F1/drivers'>Back</Link>
                 <h1>{details.name}</h1>
             </div>
             <div className="details-table-container">
