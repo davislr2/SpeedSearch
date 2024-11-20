@@ -1,12 +1,51 @@
 import React, { useEffect, useState } from 'react';
-import '../styles/F1.css';
+import { Link } from 'react-router-dom';
 import '../App.css';
-import {Link} from 'react-router-dom';
-import '../pages/Driver.js'
-import '../pages/Constructor.js'
-import '../pages/Circuit.js'
+import '../styles/F1.css';
+
+
 
 function F1() {
+    const [currentDrivers, setCurrentDrivers] = useState([]);
+    const [currentConstructors, setCurrentConstructors] = useState([]);
+    const [currentCircuits, setCurrentCircuits] = useState([]);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const driversResponse = await fetch(`/data/F1_drivers.json`);
+                const driversData = await driversResponse.json();
+                const currentYearDrivers = driversData.filter(
+                    driver => driver.last_year === "2024"
+                );
+                setCurrentDrivers(currentYearDrivers);
+
+                const constructorsResponse = await fetch(`/data/F1_constructors.json`);
+                if (!constructorsResponse.ok) {
+                    throw new Error(`HTTP error! status: ${constructorsResponse.status}`);
+                }
+                const constructorData = await constructorsResponse.json();
+                const currentYearConstructors = constructorData.filter(
+                    constructor => constructor.end_year === 2024
+                );
+                setCurrentConstructors(currentYearConstructors);
+
+                const circuitsResponse = await fetch('/data/F1_circuits.json');
+                if (!circuitsResponse.ok) {
+                    throw new Error(`HTTP error! status: ${circuitsResponse.status}`);
+                }
+                const circuitData = await circuitsResponse.json();
+                const currentYearCircuits = circuitData.filter(
+                    circuit => circuit.last_year === "2024"
+                );
+                setCurrentCircuits(currentYearCircuits);
+            } catch (error) {
+                console.error("Error fetching data:", error);
+            }
+        };
+        fetchData();
+    }, []);
+
     return (
         <div className="F1">
             <h1>Formula One</h1>
@@ -101,40 +140,42 @@ function F1() {
             </table>
 
             <Link to='/F1/drivers' className="header-link">
-            <h3>Drivers</h3>
+                <h3>Drivers</h3>
             </Link>
-            <table className='drivers-table'>
-                
+            <table className='grid-table'>
+                {currentDrivers.map((driver) => (
+                    <div key={driver.name} className="grid">
+                        <Link to={`/F1/drivers/${driver.name}`} className="details-link">
+                            {driver.name}
+                        </Link>
+                    </div>
+                ))}
             </table>
 
             <Link to='/F1/constructors' className="header-link">
-            <h3>Constructors</h3>
+                <h3>Constructors</h3>
             </Link>
-            <table className='constructors-table'>
-                <tr>
-                    <td>Mercedes</td>
-                </tr>
+            <table className='grid-table'>
+                {currentConstructors.map((constructor) => (
+                    <div key={constructor.name} className="grid">
+                        <Link to={`/F1/constructors/${constructor.name}`} className="details-link">
+                            {constructor.name}
+                        </Link>
+                    </div>
+                ))}
             </table>
-            
+
             <Link to='/F1/circuits' className="header-link">
-            <h3>Circuits</h3>
+                <h3>Circuits</h3>
             </Link>
-            <table className='circuit-table'>
-                <tr>
-                    <td>Bahrain International Circuit</td> <td>Jeddah Street Circuit</td> <td>Albert Park</td> <td>Suzuka Circuit</td> <td>Shanghai International Circuit</td>
-                </tr>
-                <tr>
-                    <td>Miami International Autodrome</td><td>Autodromo Enzo E Dino Ferrari</td><td>Circuit De Monaco</td><td>Circuit Gilles Villeneuve</td><td>Circuit De Catalunya</td>
-                </tr>
-                <tr>
-                    <td>Red Bull Ring</td> <td>Silverstone Circuit</td> <td>Hungaroring</td> <td>Spa-Francorchamps</td> <td>Circuit Zandvoort</td>
-                </tr>
-                <tr>
-                    <td>Autodromo Nazionale Monza</td><td>Baku City Circuit</td><td>Marina Bay Street Circuit</td><td>Circuit of the Americas</td><td>Autodromo Hermanos Rodrigez</td>
-                </tr>
-                <tr>
-                    <td>Autodromo Jose Carlos Pace Interlagos</td><td>Las Vegas Street Circuit</td><td>Losail International Circuit</td><td>Yas Marina Circuit</td>
-                </tr>
+            <table className='grid-table'>
+                {currentCircuits.map((circuit) => (
+                    <div key={circuit.circuit_name} className="grid">
+                        <Link to={`/F1/circuits/${circuit.circuit_name}`} className="details-link">
+                            {circuit.circuit_name}
+                        </Link>
+                    </div>
+                ))}
             </table>
         </div>
     );

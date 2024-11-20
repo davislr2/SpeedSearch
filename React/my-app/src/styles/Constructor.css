@@ -1,3 +1,9 @@
 .constructor-table{
-    display: left;
+    display: flex;
+    /*moves where the list is */
+    justify-content: left;
+    align-items: left;
+    margin-bottom: 20px;
+    text-align: left;
+    color : inherit;
 }

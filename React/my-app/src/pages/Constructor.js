@@ -52,6 +52,7 @@ const Constructor = () => {
                         className ="details-link">
                         {constructor.name}
                         </Link>
+                        {console.log(constructor)}
                     </tr>
                 ))}
             </tbody>

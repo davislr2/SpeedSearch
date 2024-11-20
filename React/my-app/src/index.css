@@ -38,3 +38,20 @@ tr:hover {
     text-decoration: none;
     color: inherit;
 }
+/* Formatting for Driver, Constructor, Circuit table contents in F1, F2, F3 */
+.grid-table {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.grid {
+    padding: 0.75rem;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.link {
+    color: black;
+}

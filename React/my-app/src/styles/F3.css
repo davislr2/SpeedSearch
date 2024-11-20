@@ -8,6 +8,7 @@ html, body {
     flex-direction: column; /* Arrange children vertically */
     min-height: 100vh; /* Full viewport height */
     padding-bottom: 0; /* Space for the footer height */
+    padding-left: 10px;
 }
 
 h3 {
@@ -21,4 +22,6 @@ table {
     margin-left: 18px;
 }
 
-
+.link {
+    color: black
+}

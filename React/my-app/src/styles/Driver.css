@@ -9,4 +9,5 @@ Then edit the table on the F1/F2/F3.css file*/
     align-items: left;
     margin-bottom: 20px;
     text-align: left;
+    color : inherit;
 }

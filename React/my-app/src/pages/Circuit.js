@@ -40,6 +40,7 @@ const Circuit = () => {
                         className="details-link">
                         {circuit.circuit_name}
                         </Link>
+                        {console.log(circuit)}
                     </tr>
                 ))}
             </tbody>
