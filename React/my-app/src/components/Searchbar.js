@@ -23,13 +23,9 @@ const Searchbar = () => {
                     // VERSUS IDENTIFIER
                     if (responseType.includes('versus')) {
                         if (jsonData1 && jsonData2) {
-                            console.log("Original jsonData1:", jsonData1);
-                            console.log("Original jsonData2:", jsonData2);
                             // Replace single quotes with double quotes
                             jsonData1 = jsonData1.replace(/'/g, '"');
                             jsonData2 = jsonData2.replace(/'/g, '"');
-                            console.log("Formatted jsonData1:", jsonData1);
-                            console.log("Formatted jsonData2:", jsonData2);
                             try {
                                 parsedResults.push({ type: responseType, data1: JSON.parse(jsonData1), data2: JSON.parse(jsonData2) });
                             } catch (parseError) {
@@ -108,22 +104,29 @@ const Searchbar = () => {
             {results && results.map((resultObj, index) => {
                 // Defining function to map over results and render them.
                 if (resultObj.type === 'driver_versus') {
-                    // Ensure resultObj.data1 and resultObj.data2 are defined
-                    if (resultObj.data1 && resultObj.data2) {
+                    let driver1name = Object.values(resultObj.data1)[0];
+                    let driver2name = Object.values(resultObj.data2)[0];
+                    // get rid of first item from the resultObj.data1 and resultObj.data2
+                    let driver1data = Object.fromEntries(Object.entries(resultObj.data1).slice(1));
+                    let driver2data = Object.fromEntries(Object.entries(resultObj.data2).slice(1));
+                    // see if the driver is a champion
+                    let driver1champion = driver1data['championships'][0] != 0;
+                    let driver2champion = driver2data['championships'][0] != 0;
+                    if (driver1data && driver2data) {
                         return (
                             <div key={index} className='searchbar-results'>
                                 <div className='driver'>
-                                    <h3>Driver 1</h3>
+                                    <h3 className = {driver1champion ? 'champion-header' : ''}>{driver1name}</h3>
                                     <ul>
-                                        {Object.entries(resultObj.data1).map(([key, value], i) => (
+                                        {Object.entries(driver1data).map(([key, value], i) => (
                                             <li key={i}><strong>{key}:</strong> {formatValue(key, value)}</li>
                                         ))}
                                     </ul>
                                 </div>
                                 <div className='driver'>
-                                    <h3>Driver 2</h3>
+                                    <h3 className = {driver2champion ? 'champion-header' : ''}>{driver2name}</h3>
                                     <ul>
-                                        {Object.entries(resultObj.data2).map(([key, value], i) => (
+                                        {Object.entries(driver2data).map(([key, value], i) => (
                                             <li key={i}><strong>{key}:</strong> {formatValue(key, value)}</li>
                                         ))}
                                     </ul>
@@ -138,20 +141,29 @@ const Searchbar = () => {
                 if (resultObj.type === 'team_versus') {
                     // Ensure resultObj.data1 and resultObj.data2 are defined
                     if (resultObj.data1 && resultObj.data2) {
+                        let team1name = Object.values(resultObj.data1)[0];
+                        let team2name = Object.values(resultObj.data2)[0];
+                        // get rid of first item from the resultObj.data1 and resultObj.data2
+                        let team1data = Object.fromEntries(Object.entries(resultObj.data1).slice(1));
+                        let team2data = Object.fromEntries(Object.entries(resultObj.data2).slice(1));
+                        // see if the team has a championship
+                        let team1champion = team1data['championships'] != 0;
+                        let team2champion = team2data['championships'] != 0;
+                        console.log(team2data['championships']);
                         return (
                             <div key={index} className='searchbar-results'>
                                 <div className='driver'>
-                                    <h3>Team 1</h3>
+                                    <h3 className = {team1champion ? 'champion-header' : ''}>{team1name}</h3>
                                     <ul>
-                                        {Object.entries(resultObj.data1).map(([key, value], i) => (
+                                        {Object.entries(team1data).map(([key, value], i) => (
                                             <li key={i}><strong>{key}:</strong> {formatValue(key, value)}</li>
                                         ))}
                                     </ul>
                                 </div>
                                 <div className='driver'>
-                                    <h3>Team 2</h3>
+                                    <h3 className = {team2champion ? 'champion-header' : ''}>{team2name}</h3>
                                     <ul>
-                                        {Object.entries(resultObj.data2).map(([key, value], i) => (
+                                        {Object.entries(team2data).map(([key, value], i) => (
                                             <li key={i}><strong>{key}:</strong> {formatValue(key, value)}</li>
                                         ))}
                                     </ul>
@@ -165,12 +177,16 @@ const Searchbar = () => {
                 }
 
                 if (resultObj.type === 'driver' || resultObj.type === 'team') {
+                    let name = Object.values(resultObj.data1)[0];
+                    let data = Object.fromEntries(Object.entries(resultObj.data1).slice(1));
+                    let champion = data['championships'] != 0;
                     if (resultObj.data1) {
                         return (
                             <div key={index} className='searchbar-results'>
                                 <div className='driver'>
+                                    <h3 className = {champion ? 'champion-header' : ''} >{name}</h3>
                                     <ul>
-                                        {Object.entries(resultObj.data1).map(([key, value], i) => (
+                                        {Object.entries(data).map(([key, value], i) => (
                                             <li key={i}><strong>{key}:</strong> {formatValue(key, value)}</li>
                                         ))}
                                     </ul>

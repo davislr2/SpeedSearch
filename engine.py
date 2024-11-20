@@ -107,7 +107,7 @@ def versus_q(left, right, query):
     # Check F2 next.
     if not driver1_exists or not driver2_exists:
         if (driver1_exists and not driver2_exists) or (not driver1_exists and driver2_exists):
-            return ["error", "The Search Engine does not support comparisons between drivers from different series."]
+            return ["error", "The Search Engine could not find one of the drivers you are looking for or one of the drivers is from a different series."]
         for driver in f2_drivers: 
             if driver['name'].lower() == driver1.lower():
                 driver1_exists = True
@@ -121,7 +121,7 @@ def versus_q(left, right, query):
     # Check F3 last.
     if not driver1_exists or not driver2_exists:
         if (driver1_exists and not driver2_exists) or (not driver1_exists and driver2_exists):
-            return ["error", "The Search Engine does not support comparisons between drivers from different series."]
+            return ["error", "The Search Engine could not find one of the drivers you are looking for or one of the drivers is from a different series."]
         for driver in f3_drivers: 
             if driver['name'].lower() == driver1.lower():
                 driver1_exists = True
@@ -160,7 +160,7 @@ def versus_q(left, right, query):
         # Check F2 next.
         if not team1_exists or not team2_exists:
             if (team1_exists and not team2_exists) or (not team1_exists and team2_exists):
-                return ["error", "The Search Engine does not support comparisons between teams from different series."]
+                return ["error", "The Search Engine could not find one of the teams you are looking for or one of the teams is from a different series."]
             for team in f2_teams:
                 if team['name'] == team1:
                     team1_exists = True
@@ -173,7 +173,7 @@ def versus_q(left, right, query):
         # Check F3 last. 
         if not team1_exists or not team2_exists:
             if (team1_exists and not team2_exists) or (not team1_exists and team2_exists):
-                return ["error", "The Search Engine does not support comparisons between teams from different series."]
+                return ["error", "The Search Engine could not find one of the teams you are looking for or one of the teams is from a different series."]
             for team in f3_teams:
                 if team['name'] == team1:
                     team1_exists = True
@@ -484,6 +484,7 @@ def driver_team_q(query):
     for team in f3_teams:
         if query.lower() == team['name'].lower():
             return ["team", str(team)]
+    return ["error", "The following query was not accepted: " + query]
 
 ####################
 #  SEASON HANDLER  #
