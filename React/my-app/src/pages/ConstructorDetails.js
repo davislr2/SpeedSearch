@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import '../styles/ConstructorDetails.css';
-import { Link } from 'react-router-dom';
 
 const ConstructorDetails = () => {
     const { level, name } = useParams();

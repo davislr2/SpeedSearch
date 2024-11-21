@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import '../styles/CircuitDetails.css';
-import { Link } from 'react-router-dom';
 
 const CircuitDetails = () => {
     const { level, name } = useParams();
