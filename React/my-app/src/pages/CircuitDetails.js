@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import '../styles/CircuitDetails.css';
+import { Link } from 'react-router-dom';
 
 const CircuitDetails = () => {
     const { level, name } = useParams();
     const [details, setDetails] = useState(null);
 
+    // Fetch data from json file based on the level
     useEffect(() => {
         const fetchCircuitDetails = async () => {
             try {
@@ -29,11 +31,16 @@ const CircuitDetails = () => {
 
     return (
         <div className="circuit-details-container">
+            {/* Back and Home buttons */}
+            <Link className='back-button' to={`/F1/circuits`}>Back</Link>
+            <Link className='home-button' to='/'>Home</Link>
+            {/* Print the circuit name */}
             <div className="header-section">
                 <Link className='home-button' to='/'>Home</Link>
                 <Link className='back-button' to={`/${level}/circuits`}>Back</Link>
                 <h1>{details.circuit_name}</h1>
             </div>
+            {/* Print the circuit details */}
             <div className="details-table-container">
                 <table className="details-table">
                     <tbody>

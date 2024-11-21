@@ -1,39 +1,42 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import '../styles/ConstructorDetails.css';
+import { Link } from 'react-router-dom';
 
 const ConstructorDetails = () => {
-    const {level, name } = useParams();
-    const [ details, setDetails] = useState(null);
+    const { level, name } = useParams();
+    const [details, setDetails] = useState(null);
 
+    // Fetch data from json file based on the level
     useEffect(() => {
         const fetchConstructorDetails = async () => {
-            try{
+            try {
                 const response = await fetch(`/data/${level}_constructors.json`);
 
                 const data = await response.json();
                 const constructorData = data.find(constructor => constructor.name === name);
 
                 setDetails(constructorData);
-            }   catch (error) {
+            } catch (error) {
                 console.error('Error fetching constructor details:', error);
             }
         };
 
         fetchConstructorDetails();
-    },  [level, name]);
+    }, [level, name]);
 
-    if (!details){
+    if (!details) {
         return <div> Loading details...</div>;
     }
 
-    return(
+    return (
         <div className="constructor-details-container">
+            {/* Print the constructor name */}
             <div className="header-section">
-            <Link className='home-button' to='/'>Home</Link>
+                <Link className='home-button' to='/'>Home</Link>
                 <Link className='back-button' to={`/${level}/constructors`}>Back</Link>
-                <h1>{details.name}</h1>
             </div>
+            {/* Print the constructor details */}
             <div className="details-table-container">
                 <table className="details-table>">
                     <tbody>

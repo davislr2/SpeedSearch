@@ -8,6 +8,7 @@ const Driver = () => {
     const { level } = useParams();
     const [drivers, setDrivers] = useState([]);
 
+    // Fetching driver data from json file based on the level
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -31,6 +32,7 @@ const Driver = () => {
         return <div>Loading...</div>;
     }
 
+    // Sorting function to sort the drivers based on the end year so the most recent drivers are listed first.
     drivers.sort((a, b) => {
         const aLast = a.last_year;
         const bLast = b.last_year;
@@ -47,10 +49,12 @@ const Driver = () => {
     return (
         <div className='driver-header'>
             <h1>Drivers</h1>
+            {/* Back and home buttons */}
             <Link className='home-button' to='/'>Home</Link>
             <Link className='back-button' to={`/${level}`}>Back</Link>
 
             <div className='drivers-table'>
+                {/* Mapping through the json and printing the driver names */}
                 {drivers.map((driver) => (
                     <div key={driver.name} className="grid">
                         <Link to={`${driver.name}`}

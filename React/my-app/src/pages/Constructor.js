@@ -7,6 +7,7 @@ const Constructor = () => {
     const { level } = useParams();
     const [constructors, setConstructors] = useState([])
 
+    // Fetching the data from json file based on the level
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -30,6 +31,7 @@ const Constructor = () => {
         return <div>Loading...</div>;
     }
 
+    {/* Sorting function to sort the constructors based on the end year so the most recent teams are listed first. */}
     constructors.sort((a, b) => {
         const aLast = a.end_year;
         const bLast = b.end_year;
@@ -40,18 +42,21 @@ const Constructor = () => {
         if (aLast < bLast) {
             return 1;
         }
-        return 0;
+        return 0
     })
 
+    // Print the constructor names
     return (
         <div className='constructor-header'>
             <h1>Constructors</h1>
+            {/* Back and home buttons */}
             <Link className='home-button' to='/'>Home</Link>
             <Link className='back-button' to={`/${level}`}>Back</Link>
 
             <div className='constructors-table'>
                     {constructors.map((constructor) => (
                         <div key={constructor.name} className="grid">
+                            {/*Link to the constructor details page*/}
                             <Link to={`${constructor.name}`}
                                 className="details-link">
                                 {constructor.name}

@@ -7,12 +7,14 @@ const DriverDetails = () => {
     const { level, name } = useParams();
     const [ details, setDetails]= useState(null);
 
+    // Fetch data from json file based on the level
     useEffect(() => {
         const fetchDriverDetails = async () => {
             try{
                 const response = await fetch(`/data/${level}_drivers.json`);
 
                 const data = await response.json();
+                // Find the driver data based on the name
                 const driverData = data.find(driver => driver.name === name);
                 
                 setDetails(driverData);
