@@ -11,14 +11,17 @@ function Home() {
 
     return (
         <div className="Home">
+            {/* Rendering the banner for the home page */}
             <div className="banner">
                 <img className="banner-image-left" src={checkeredFlag} alt="checkered flag" />
                 <h1 className="banner-text">SpeedSearch</h1>
                 <img className="banner-image-right" src={checkeredFlag} alt="checkered flag" />
             </div>
+            {/* Rendering the navbar and search bar components */}
             <Navbar />
             <Searchbar/>
            
+            {/* Rendering the home page content */}
                 <div className="home-default">
                     <div className="home-content">
                         <div className="home-text">
@@ -30,7 +33,6 @@ function Home() {
                         <div className="query-forms">
                             <p>This is a list of query forms that are accepted by the search function on the site.</p>
                             <ul>
-                                <li>Note: Series defaults to F1 if not specified.</li>
                                 <br></br>
                                 <li>[Driver] vs [Driver]</li>
                                 <li>[Team] vs [Team]</li>
@@ -40,10 +42,12 @@ function Home() {
                                 <li>[Team]</li>
                                 <li>[Year] [Series] Season</li>
                                 <br></br>
+                                <li>Note: Series defaults to F1 if not specified.</li>
                                 <li>Feel free to mess around with the wording to see what works, these are just the simplest forms.</li>
                             </ul>
                         </div>
                     </div>
+                    {/* Rendering the car image */}
                     <div className='car-image-container'>
                             <img className="car" src={car} alt="car" />
                     </div>

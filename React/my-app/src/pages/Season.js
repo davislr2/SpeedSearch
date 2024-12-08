@@ -39,8 +39,8 @@ const Season = () => {
     return (
         <div>
             <h1>{level} Championship - {year}</h1>
+            {/* Back and home buttons */}
             <Link className='home-button' to='/'>Home</Link>
-            {/* Add a back button to navigate back to the level */}
             <Link className='back-button' to={`/${level}`}>Back</Link>
             <table>
                 <thead>
@@ -58,6 +58,7 @@ const Season = () => {
                         const totalPoints = results.reduce((sum, result) => sum + parseInt(result[1]), 0);
                         
                         return (
+                            // map over the races and display the information for each driver 
                             <tr key={driver}>
                                 <td>{driver}</td>
                                 {races.map((_, index) => (

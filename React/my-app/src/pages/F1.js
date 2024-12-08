@@ -13,27 +13,34 @@ function F1() {
     useEffect(() => {
         const fetchData = async () => {
             try {
+                // Fetch the driver data.
                 const driversResponse = await fetch(`/data/F1_drivers.json`);
                 const driversData = await driversResponse.json();
+                // Filter to find drivers from the current year. 
                 const currentYearDrivers = driversData.filter(
                     driver => driver.last_year === "2024"
                 );
                 setCurrentDrivers(currentYearDrivers);
 
+                // Fetch the constructor data.
                 const constructorsResponse = await fetch(`/data/F1_constructors.json`);
                 if (!constructorsResponse.ok) {
                     throw new Error(`HTTP error! status: ${constructorsResponse.status}`);
                 }
+                // Filter the constructor data to find constructors from the current year.
                 const constructorData = await constructorsResponse.json();
                 const currentYearConstructors = constructorData.filter(
                     constructor => constructor.end_year === 2024
                 );
                 setCurrentConstructors(currentYearConstructors);
 
+                // Fetch the circuits data.
                 const circuitsResponse = await fetch('/data/F1_circuits.json');
                 if (!circuitsResponse.ok) {
                     throw new Error(`HTTP error! status: ${circuitsResponse.status}`);
                 }
+
+                // Filter the circuit data to find circuits from the current year.
                 const circuitData = await circuitsResponse.json();
                 const currentYearCircuits = circuitData.filter(
                     circuit => circuit.last_year === "2024"
@@ -143,8 +150,10 @@ function F1() {
                 <h3>Drivers</h3>
             </Link>
             <table className='grid-table'>
+                {/* Mapping through the current drivers and printing them */}
                 {currentDrivers.map((driver) => (
                     <div key={driver.name} className="grid">
+                        {/*Link to the driver details page*/}
                         <Link to={`/F1/drivers/${driver.name}`} className="details-link">
                             {driver.name}
                         </Link>
@@ -155,9 +164,11 @@ function F1() {
             <Link to='/F1/constructors' className="header-link">
                 <h3>Constructors</h3>
             </Link>
+            {/* Mapping through the current constructors and printing them */}
             <table className='grid-table'>
                 {currentConstructors.map((constructor) => (
                     <div key={constructor.name} className="grid">
+                        {/*Link to the constructor details page*/}
                         <Link to={`/F1/constructors/${constructor.name}`} className="details-link">
                             {constructor.name}
                         </Link>
@@ -168,9 +179,11 @@ function F1() {
             <Link to='/F1/circuits' className="header-link">
                 <h3>Circuits</h3>
             </Link>
+            {/* Mapping through the current circuits and printing them */}
             <table className='grid-table'>
                 {currentCircuits.map((circuit) => (
                     <div key={circuit.circuit_name} className="grid">
+                        {/*Link to the circuit details page*/}
                         <Link to={`/F1/circuits/${circuit.circuit_name}`} className="details-link">
                             {circuit.circuit_name}
                         </Link>

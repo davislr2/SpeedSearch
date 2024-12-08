@@ -220,32 +220,32 @@ def driver_most_q(query):
             max_wins = 0
             max_wins_driver = None
             for driver in f1_drivers:
-                if int(driver['wins']) > max_wins:
-                    max_wins = int(driver['wins'])
+                if float(driver['wins']) > max_wins:
+                    max_wins = float(driver['wins'])
                     max_wins_driver = driver
             return ["most", "The driver with the most wins in F1 is " + str(max_wins_driver['name']) + " with " + str(max_wins) + " wins."]
         elif stat == "poles":
             max_poles = 0
             max_poles_driver = None
             for driver in f1_drivers:
-                if int(driver['poles']) > max_poles:
-                    max_poles = int(driver['poles'])
+                if float(driver['poles']) > max_poles:
+                    max_poles = float(driver['poles'])
                     max_poles_driver = driver
             return ["most", "The driver with the most poles in F1 is " + str(max_poles_driver['name']) + " with " + str(max_poles) + " poles."]
         elif stat == "points":
             max_points = 0
             max_points_driver = None
             for driver in f1_drivers:
-                if int(driver['points']) > max_points:
-                    max_points = int(driver['points'])
+                if float(driver['points']) > max_points:
+                    max_points = float(driver['points'])
                     max_points_driver = driver
             return ["most", "The driver with the most points in F1 is " + str(max_points_driver['name']) + " with " + str(max_points) + " points."]
         elif stat == "championships":
             max_championships = 0
             max_championships_driver = None
             for driver in f1_drivers:
-                if int(driver['championships']) > max_championships:
-                    max_championships = int(driver['championships'])
+                if float(driver['championships']) > max_championships:
+                    max_championships = float(driver['championships'])
                     max_championships_driver = driver
             return ["most", "The driver with the most championships in F1 is " + str(max_championships_driver['name']) + " with " + str(max_championships) + " championships."]
         else:
@@ -257,32 +257,32 @@ def driver_most_q(query):
             max_wins = 0
             max_wins_driver = None
             for driver in f2_drivers:
-                if int(driver['wins']) > max_wins:
-                    max_wins = int(driver['wins'])
+                if float(driver['wins']) > max_wins:
+                    max_wins = float(driver['wins'])
                     max_wins_driver = driver
             return ["most", "The driver with the most wins in F2 is " + str(max_wins_driver['name']) + " with " + str(max_wins) + " wins."]
         elif stat == "poles":
             max_poles = 0
             max_poles_driver = None
             for driver in f2_drivers:
-                if int(driver['poles']) > max_poles:
-                    max_poles = int(driver['poles'])
+                if float(driver['poles']) > max_poles:
+                    max_poles = float(driver['poles'])
                     max_poles_driver = driver
             return ["most", "The driver with the most poles in F2 is " + str(max_poles_driver['name']) + " with " + str(max_poles) + " poles."]
         elif stat == "points":
             max_points = 0
             max_points_driver = None
             for driver in f2_drivers:
-                if int(driver['points']) > max_points:
-                    max_points = int(driver['points'])
+                if float(driver['points']) > max_points:
+                    max_points = float(driver['points'])
                     max_points_driver = driver
             return ["most", "The driver with the most points in F2 is " + str(max_points_driver['name']) + " with " + str(max_points) + " points."]
         elif stat == "championships":
             max_championships = 0
             max_championships_driver = None
             for driver in f2_drivers:
-                if int(driver['championships']) > max_championships:
-                    max_championships = int(driver['championships'])
+                if float(driver['championships']) > max_championships:
+                    max_championships = float(driver['championships'])
                     max_championships_driver = driver
             return ["most", "The driver with the most championships in F2 is " + str(max_championships_driver['name']) + " with " + str(max_championships) + " championships."]
         else:
@@ -294,32 +294,32 @@ def driver_most_q(query):
             max_wins = 0
             max_wins_driver = None
             for driver in f3_drivers:
-                if int(driver['wins']) > max_wins:
-                    max_wins = int(driver['wins'])
+                if float(driver['wins']) > max_wins:
+                    max_wins = float(driver['wins'])
                     max_wins_driver = driver
             return ["most", "The driver with the most wins in F3 is " + str(max_wins_driver['name']) + " with " + str(max_wins) + " wins."]
         elif stat == "poles":
             max_poles = 0
             max_poles_driver = None
             for driver in f3_drivers:
-                if int(driver['poles']) > max_poles:
-                    max_poles = int(driver['poles'])
+                if float(driver['poles']) > max_poles:
+                    max_poles = float(driver['poles'])
                     max_poles_driver = driver
             return ["most", "The driver with the most poles in F3 is " + str(max_poles_driver['name']) + " with " + str(max_poles) + " poles."]
         elif stat == "points":
             max_points = 0
             max_points_driver = None
             for driver in f3_drivers:
-                if int(driver['points']) > max_points:
-                    max_points = int(driver['points'])
+                if float(driver['points']) > max_points:
+                    max_points = float(driver['points'])
                     max_points_driver = driver
             return ["most", "The driver with the most points in F3 is " + str(max_points_driver['name']) + " with " + str(max_points) + " points."]
         elif stat == "championships":
             max_championships = 0
             max_championships_driver = None
             for driver in f3_drivers:
-                if int(driver['championships']) > max_championships:
-                    max_championships = int(driver['championships'])
+                if float(driver['championships']) > max_championships:
+                    max_championships = float(driver['championships'])
                     max_championships_driver = driver
             return ["most", "The driver with the most championships in F3 is " + str(max_championships_driver['name']) + " with " + str(max_championships) + " championships."]
         else:
@@ -356,32 +356,32 @@ def team_most_q(query):
             max_wins = 0
             max_wins_team = None
             for team in f1_teams:
-                if int(team['wins']) > max_wins:
-                    max_wins = int(team['wins'])
+                if float(team['wins']) > max_wins:
+                    max_wins = float(team['wins'])
                     max_wins_team = team
             return ["most", "The team with the most wins in F1 is " + str(max_wins_team['name']) + " with " + str(max_wins) + " wins."]
         elif stat == "poles":
             max_poles = 0
             max_poles_team = None
             for team in f1_teams:
-                if int(team['poles']) > max_poles:
-                    max_poles = int(team['poles'])
+                if float(team['poles']) > max_poles:
+                    max_poles = float(team['poles'])
                     max_poles_team = team
             return ["most", "The team with the most poles in F1 is " + str(max_poles_team['name']) + " with " + str(max_poles) + " poles."]
         elif stat == "points":
             max_points = 0
             max_points_team = None
             for team in f1_teams:
-                if int(team['points']) > max_points:
-                    max_points = int(team['points'])
+                if float(team['points']) > max_points:
+                    max_points = float(team['points'])
                     max_points_team = team
             return ["most", "The team with the most points in F1 is " + str(max_points_team['name']) + " with " + str(max_points) + " points."]
         elif stat == "championships":
             max_championships = 0
             max_championships_team = None
             for team in f1_teams:
-                if int(team['championships']) > max_championships:
-                    max_championships = int(team['championships'])
+                if float(team['championships']) > max_championships:
+                    max_championships = float(team['championships'])
                     max_championships_team = team
             return ["most", "The team with the most championships in F1 is " + str(max_championships_team['name']) + " with " + str(max_championships) + " championships."]
         else:
@@ -393,32 +393,32 @@ def team_most_q(query):
             max_wins = 0
             max_wins_team = None
             for team in f2_teams:
-                if int(team['wins']) > max_wins:
-                    max_wins = int(team['wins'])
+                if float(team['wins']) > max_wins:
+                    max_wins = float(team['wins'])
                     max_wins_team = team
             return ["most", "The team with the most wins in F2 is " + str(max_wins_team['name']) + " with " + str(max_wins) + " wins."]
         elif stat == "poles":
             max_poles = 0
             max_poles_team = None
             for team in f2_teams:
-                if int(team['poles']) > max_poles:
-                    max_poles = int(team['poles'])
+                if float(team['poles']) > max_poles:
+                    max_poles = float(team['poles'])
                     max_poles_team = team
             return ["most", "The team with the most poles in F2 is " + str(max_poles_team['name']) + " with " + str(max_poles) + " poles."]
         elif stat == "points":
             max_points = 0
             max_points_team = None
             for team in f2_teams:
-                if int(team['points']) > max_points:
-                    max_points = int(team['points'])
+                if float(team['points']) > max_points:
+                    max_points = float(team['points'])
                     max_points_team = team
             return ["most", "The team with the most points in F2 is " + str(max_points_team['name']) + " with " + str(max_points) + " points."]
         elif stat == "championships":
             max_championships = 0
             max_championships_team = None
             for team in f2_teams:
-                if int(team['championships']) > max_championships:
-                    max_championships = int(team['championships'])
+                if float(team['championships']) > max_championships:
+                    max_championships = float(team['championships'])
                     max_championships_team = team
             return ["most", "The team with the most championships in F2 is " + str(max_championships_team['name']) + " with " + str(max_championships) + " championships."]
         else:
@@ -430,32 +430,32 @@ def team_most_q(query):
             max_wins = 0
             max_wins_team = None
             for team in f3_teams:
-                if int(team['wins']) > max_wins:
-                    max_wins = int(team['wins'])
+                if float(team['wins']) > max_wins:
+                    max_wins = float(team['wins'])
                     max_wins_team = team
             return ["most", "The team with the most wins in F3 is " + str(max_wins_team['name']) + " with " + str(max_wins) + " wins."]
         elif stat == "poles":
             max_poles = 0
             max_poles_team = None
             for team in f3_teams:
-                if int(team['poles']) > max_poles:
-                    max_poles = int(team['poles'])
+                if float(team['poles']) > max_poles:
+                    max_poles = float(team['poles'])
                     max_poles_team = team
             return ["most", "The team with the most poles in F3 is " + str(max_poles_team['name']) + " with " + str(max_poles) + " poles."]
         elif stat == "points":
             max_points = 0
             max_points_team = None
             for team in f3_teams:
-                if int(team['points']) > max_points:
-                    max_points = int(team['points'])
+                if float(team['points']) > max_points:
+                    max_points = float(team['points'])
                     max_points_team = team
             return ["most", "The team with the most points in F3 is " + str(max_points_team['name']) + " with " + str(max_points) + " points."]
         elif stat == "championships":
             max_championships = 0
             max_championships_team = None
             for team in f3_teams:
-                if int(team['championships']) > max_championships:
-                    max_championships = int(team['championships'])
+                if float(team['championships']) > max_championships:
+                    max_championships = float(team['championships'])
                     max_championships_team = team
             return ["most", "The team with the most championships in F3 is " + str(max_championships_team['name']) + " with " + str(max_championships) + " championships."]
         else:
@@ -501,7 +501,7 @@ def season_q(query):
     for word in query.split():
         if word.isdigit():
             year = str(word)
-            print(year)
+            float(year)
             break
     
     if level == "F1":

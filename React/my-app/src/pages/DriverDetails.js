@@ -32,11 +32,13 @@ const DriverDetails = () => {
 
     return (
         <div className="driver-details-container">
+            {/* Home and back buttons */}
             <div className="header-section">
                 <Link className='home-button' to='/'>Home</Link>
                 <Link className='back-button' to={`/${level}/drivers`}>Back</Link>
                 <h1>{details.name}</h1>
             </div>
+            {/* Print the driver details */}
             <div className="details-table-container">
                 <table className="details-table">
                     <tbody>

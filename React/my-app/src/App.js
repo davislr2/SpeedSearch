@@ -1,6 +1,5 @@
 import React from 'react';
 import Home from './pages/Home.js';
-import Query_forms from './pages/Query_forms.js';
 import Footer from './components/Footer.js';
 import F1 from './pages/F1.js';
 import F2 from './pages/F2.js';
@@ -39,7 +38,6 @@ class App extends React.Component {
           <div className='App-content'>
           <Routes>
             <Route path='/' element={<Home />} />
-            <Route path='/query_forms' element={<Query_forms />} />
             <Route path='/:level/Seasons/:year' element={<Season />} />
             <Route path='/:level/grandPrix/:year' element={<GrandPrix />} />
             <Route path='/F1/grandPrix/:year/:country' element={<CountryDetails />} />
