@@ -30,44 +30,14 @@
         "best_championship_position": 6
     },
     {
-        "name": "ALPINE",
-        "points": 461.0,
-        "wins": 1,
-        "poles": 0,
-        "start_year": 2021,
-        "end_year": 2024,
-        "championships": 0,
-        "best_championship_position": 4
-    },
-    {
-        "name": "AGS",
-        "points": 2.0,
-        "wins": 0,
-        "poles": 0,
-        "start_year": 1986,
-        "end_year": 1991,
-        "championships": 0,
-        "best_championship_position": 12
-    },
-    {
-        "name": "ALFA ROMEO",
-        "points": 199.0,
-        "wins": 10,
-        "poles": 12,
-        "start_year": 1950,
-        "end_year": 2023,
-        "championships": 0,
-        "best_championship_position": 6
-    },
-    {
-        "name": "ALPHATAURI",
-        "points": 309.0,
-        "wins": 1,
-        "poles": 0,
-        "start_year": 2020,
-        "end_year": 2023,
-        "championships": 0,
-        "best_championship_position": 6
+        "name": "RENAULT",
+        "points": 1777.0,
+        "wins": 35,
+        "poles": 51,
+        "start_year": 1977,
+        "end_year": 2020,
+        "championships": 2,
+        "best_championship_position": 1
     },
     {
         "name": "ALPINE",
@@ -91,7 +61,7 @@
     },
     {
         "name": "ASTON MARTIN",
-        "points": 494.0,
+        "points": 498.0,
         "wins": 0,
         "poles": 0,
         "start_year": 1959,
@@ -280,6 +250,16 @@
         "best_championship_position": 10
     },
     {
+        "name": "FERRARI",
+        "points": 10209,
+        "wins": 248,
+        "poles": 253,
+        "start_year": 1950,
+        "end_year": 2024,
+        "championships": 16,
+        "best_championship_position": 1
+    },
+    {
         "name": "FITTIPALDI",
         "points": 12.0,
         "wins": 0,
@@ -311,7 +291,7 @@
     },
     {
         "name": "FORCE INDIA",
-        "points": 1.0,
+        "points": 1039.0,
         "wins": 0,
         "poles": 1,
         "start_year": 2008,
@@ -341,7 +321,7 @@
     },
     {
         "name": "HAAS",
-        "points": 278.0,
+        "points": 280.0,
         "wins": 0,
         "poles": 1,
         "start_year": 2016,
@@ -501,7 +481,7 @@
     },
     {
         "name": "LOTUS",
-        "points": 2.0,
+        "points": 2074.0,
         "wins": 81,
         "poles": 107,
         "start_year": 1958,
@@ -561,9 +541,9 @@
     },
     {
         "name": "MCLAREN",
-        "points": 6.0,
-        "wins": 187,
-        "poles": 160,
+        "points": 6807.5,
+        "wins": 188,
+        "poles": 161,
         "start_year": 1966,
         "end_year": 2024,
         "championships": 8,
@@ -571,7 +551,7 @@
     },
     {
         "name": "MERCEDES",
-        "points": 7.0,
+        "points": 7551.5,
         "wins": 128,
         "poles": 139,
         "start_year": 1954,
@@ -711,22 +691,12 @@
     },
     {
         "name": "RED BULL",
-        "points": 7.0,
+        "points": 7723.0,
         "wins": 120,
         "poles": 103,
         "start_year": 2005,
         "end_year": 2024,
         "championships": 6,
-        "best_championship_position": 1
-    },
-    {
-        "name": "RENAULT",
-        "points": 1.0,
-        "wins": 35,
-        "poles": 51,
-        "start_year": 1977,
-        "end_year": 2020,
-        "championships": 2,
         "best_championship_position": 1
     },
     {
@@ -931,7 +901,7 @@
     },
     {
         "name": "WILLIAMS",
-        "points": 3.0,
+        "points": 3636.0,
         "wins": 114,
         "poles": 128,
         "start_year": 1975,
@@ -948,5 +918,15 @@
         "end_year": 1979,
         "championships": 0,
         "best_championship_position": 4
+    },
+    {
+        "name": "ZAKSPEED",
+        "points": 2.0,
+        "wins": 0,
+        "poles": 0,
+        "start_year": 1985,
+        "end_year": 1989,
+        "championships": 0,
+        "best_championship_position": 10
     }
 ]

@@ -1,0 +1,31 @@
+.country-details-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.details-table th,
+.details-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.first-place {
+    background-color: rgba(255, 217, 0, 0.384);
+}
+
+.second-place {
+    background-color: rgba(192, 192, 192, 0.443);
+}
+
+.third-place {
+    background-color: rgba(205, 128, 50, 0.327);
+}

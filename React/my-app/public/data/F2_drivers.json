@@ -1,0 +1,762 @@
+[
+    {
+        "name": "Isack Hadjar",
+        "wins": "5",
+        "poles": "2",
+        "points": "220",
+        "championships": "0",
+        "start_year": "2023",
+        "last_year": "2024",
+        "best_championship_position": "1"
+    },
+    {
+        "name": "Gabriel Bortoleto",
+        "wins": "2",
+        "poles": "2",
+        "points": "154.5",
+        "championships": "0",
+        "start_year": "2024",
+        "last_year": "2024",
+        "best_championship_position": "2"
+    },
+    {
+        "name": "Zane Maloney",
+        "wins": "2",
+        "poles": "1",
+        "points": "231",
+        "championships": "0",
+        "start_year": "2022",
+        "last_year": "2024",
+        "best_championship_position": "3"
+    },
+    {
+        "name": "Paul Aron",
+        "wins": "0",
+        "poles": "4",
+        "points": "124",
+        "championships": "0",
+        "start_year": "2023",
+        "last_year": "2024",
+        "best_championship_position": "4"
+    },
+    {
+        "name": "Jak Crawford",
+        "wins": "2",
+        "poles": "4",
+        "points": "162",
+        "championships": "0",
+        "start_year": "2023",
+        "last_year": "2024",
+        "best_championship_position": "5"
+    },
+    {
+        "name": "Andrea Kimi Antonelli",
+        "wins": "2",
+        "poles": "1",
+        "points": "99",
+        "championships": "0",
+        "start_year": "2024",
+        "last_year": "2024",
+        "best_championship_position": "6"
+    },
+    {
+        "name": "Franco Colapinto",
+        "wins": "1",
+        "poles": "0",
+        "points": "96",
+        "championships": "0",
+        "start_year": "2023",
+        "last_year": "2024",
+        "best_championship_position": "7"
+    },
+    {
+        "name": "Victor Martins",
+        "wins": "2",
+        "poles": "3",
+        "points": "224",
+        "championships": "0",
+        "start_year": "2023",
+        "last_year": "2024",
+        "best_championship_position": "5"
+    },
+    {
+        "name": "Kush Maini",
+        "wins": "1",
+        "poles": "4",
+        "points": "136",
+        "championships": "0",
+        "start_year": "2023",
+        "last_year": "2024",
+        "best_championship_position": "10"
+    },
+    {
+        "name": "Zak O'Sullivan",
+        "wins": "2",
+        "poles": "1",
+        "points": "59",
+        "championships": "0",
+        "start_year": "2024",
+        "last_year": "2024",
+        "best_championship_position": "13"
+    },
+    {
+        "name": "Ollie Bearman",
+        "wins": "6",
+        "poles": "3",
+        "points": "180",
+        "championships": "0",
+        "start_year": "2023",
+        "last_year": "2024",
+        "best_championship_position": "6"
+    },
+    {
+        "name": "Pepe Marti",
+        "wins": "0",
+        "poles": "0",
+        "points": "43",
+        "championships": "0",
+        "start_year": "2024",
+        "last_year": "2024",
+        "best_championship_position": "15"
+    },
+    {
+        "name": "Joshua Durksen",
+        "wins": "0",
+        "poles": "0",
+        "points": "42",
+        "championships": "0",
+        "start_year": "2024",
+        "last_year": "2024",
+        "best_championship_position": "16"
+    },
+    {
+        "name": "Juan Manuel Correa",
+        "wins": "0",
+        "poles": "0",
+        "points": "80",
+        "championships": "0",
+        "start_year": "2019",
+        "last_year": "2024",
+        "best_championship_position": "13"
+    },
+    {
+        "name": "Amaury Cordeel",
+        "wins": "0",
+        "poles": "2",
+        "points": "63",
+        "championships": "0",
+        "start_year": "2022",
+        "last_year": "2024",
+        "best_championship_position": "17"
+    },
+    {
+        "name": "Ritomo Miyata",
+        "wins": "0",
+        "poles": "0",
+        "points": "29",
+        "championships": "0",
+        "start_year": "2024",
+        "last_year": "2024",
+        "best_championship_position": "19"
+    },
+    {
+        "name": "Taylor Barnard",
+        "wins": "1",
+        "poles": "1",
+        "points": "18",
+        "championships": "0",
+        "start_year": "2024",
+        "last_year": "2024",
+        "best_championship_position": "20"
+    },
+    {
+        "name": "Rafael Villagomez",
+        "wins": "0",
+        "poles": "0",
+        "points": "13",
+        "championships": "0",
+        "start_year": "2024",
+        "last_year": "2024",
+        "best_championship_position": "22"
+    },
+    {
+        "name": "Niels Koolen",
+        "wins": "0",
+        "poles": "0",
+        "points": "0",
+        "championships": "0",
+        "start_year": "2024",
+        "last_year": "2024",
+        "best_championship_position": "24"
+    },
+    {
+        "name": "Ayumu Iwasa",
+        "wins": "5",
+        "poles": "3",
+        "points": "306",
+        "championships": "0",
+        "start_year": "2022",
+        "last_year": "2023",
+        "best_championship_position": "4"
+    },
+    {
+        "name": "Arthur Leclerc",
+        "wins": "0",
+        "poles": "0",
+        "points": "49",
+        "championships": "0",
+        "start_year": "2023",
+        "last_year": "2023",
+        "best_championship_position": "15"
+    },
+    {
+        "name": "Ralph Boschung",
+        "wins": "1",
+        "poles": "5",
+        "points": "167.5",
+        "championships": "0",
+        "start_year": "2017",
+        "last_year": "2023",
+        "best_championship_position": "10"
+    },
+    {
+        "name": "Roy Nissany",
+        "wins": "0",
+        "poles": "1",
+        "points": "42",
+        "championships": "0",
+        "start_year": "2018",
+        "last_year": "2023",
+        "best_championship_position": "16"
+    },
+    {
+        "name": "Brad Benavides",
+        "wins": "0",
+        "poles": "0",
+        "points": "0",
+        "championships": "0",
+        "start_year": "2023",
+        "last_year": "2023",
+        "best_championship_position": "22"
+    },
+    {
+        "name": "Josh Mason",
+        "wins": "0",
+        "poles": "0",
+        "points": "0",
+        "championships": "0",
+        "start_year": "2023",
+        "last_year": "2023",
+        "best_championship_position": "23"
+    },
+    {
+        "name": "Roberto Merhi",
+        "wins": "0",
+        "poles": "2",
+        "points": "92",
+        "championships": "0",
+        "start_year": "2017",
+        "last_year": "2022",
+        "best_championship_position": "12"
+    },
+    {
+        "name": "Marino Sato",
+        "wins": "0",
+        "poles": "0",
+        "points": "8",
+        "championships": "0",
+        "start_year": "2019",
+        "last_year": "2022",
+        "best_championship_position": "21"
+    },
+    {
+        "name": "Cem Bolukbasi",
+        "wins": "0",
+        "poles": "0",
+        "points": "0",
+        "championships": "0",
+        "start_year": "2022",
+        "last_year": "2022",
+        "best_championship_position": "24"
+    },
+    {
+        "name": "Luca Ghiotto",
+        "wins": "6",
+        "poles": "3",
+        "points": "609",
+        "championships": "0",
+        "start_year": "2017",
+        "last_year": "2022",
+        "best_championship_position": "3"
+    },
+    {
+        "name": "Tatiana Calderon",
+        "wins": "0",
+        "poles": "0",
+        "points": "0",
+        "championships": "0",
+        "start_year": "2019",
+        "last_year": "2022",
+        "best_championship_position": "22"
+    },
+    {
+        "name": "Zhou Guanyu",
+        "wins": "5",
+        "poles": "5",
+        "points": "474.5",
+        "championships": "0",
+        "start_year": "2019",
+        "last_year": "2021",
+        "best_championship_position": "3"
+    },
+    {
+        "name": "Daniel Ticktum",
+        "wins": "3",
+        "poles": "4",
+        "points": "256",
+        "championships": "0",
+        "start_year": "2018",
+        "last_year": "2021",
+        "best_championship_position": "4"
+    },
+    {
+        "name": "Jack Aitken",
+        "wins": "4",
+        "poles": "1",
+        "points": "270",
+        "championships": "0",
+        "start_year": "2018",
+        "last_year": "2021",
+        "best_championship_position": "5"
+    },
+    {
+        "name": "Guilherme Samaia",
+        "wins": "0",
+        "poles": "0",
+        "points": "0",
+        "championships": "0",
+        "start_year": "2020",
+        "last_year": "2021",
+        "best_championship_position": "24"
+    },
+    {
+        "name": "Gianluca Petecof",
+        "wins": "0",
+        "poles": "0",
+        "points": "0",
+        "championships": "0",
+        "start_year": "2021",
+        "last_year": "2021",
+        "best_championship_position": "27"
+    },
+    {
+        "name": "Mick Schumacher",
+        "wins": "3",
+        "poles": "2",
+        "points": "268",
+        "championships": "1",
+        "start_year": "2019",
+        "last_year": "2020",
+        "best_championship_position": "1"
+    },
+    {
+        "name": "Callum Ilott",
+        "wins": "3",
+        "poles": "9",
+        "points": "275",
+        "championships": "0",
+        "start_year": "2017",
+        "last_year": "2020",
+        "best_championship_position": "2"
+    },
+    {
+        "name": "Nikita Mazepin",
+        "wins": "2",
+        "poles": "2",
+        "points": "175",
+        "championships": "0",
+        "start_year": "2019",
+        "last_year": "2020",
+        "best_championship_position": "5"
+    },
+    {
+        "name": "Louis Deletraz",
+        "wins": "0",
+        "poles": "1",
+        "points": "316",
+        "championships": "0",
+        "start_year": "2017",
+        "last_year": "2020",
+        "best_championship_position": "8"
+    },
+    {
+        "name": "Nobuharu Matsushita",
+        "wins": "5",
+        "poles": "3",
+        "points": "317",
+        "championships": "0",
+        "start_year": "2017",
+        "last_year": "2020",
+        "best_championship_position": "6"
+    },
+    {
+        "name": "Giuliano Alesi",
+        "wins": "0",
+        "poles": "1",
+        "points": "32",
+        "championships": "0",
+        "start_year": "2019",
+        "last_year": "2020",
+        "best_championship_position": "15"
+    },
+    {
+        "name": "Artem Markelov",
+        "wins": "8",
+        "poles": "7",
+        "points": "417",
+        "championships": "0",
+        "start_year": "2017",
+        "last_year": "2020",
+        "best_championship_position": "2"
+    },
+    {
+        "name": "Sean Gelael",
+        "wins": "0",
+        "poles": "0",
+        "points": "64",
+        "championships": "0",
+        "start_year": "2017",
+        "last_year": "2020",
+        "best_championship_position": "15"
+    },
+    {
+        "name": "Nyck de Vries",
+        "wins": "8",
+        "poles": "7",
+        "points": "582",
+        "championships": "1",
+        "start_year": "2017",
+        "last_year": "2019",
+        "best_championship_position": "1"
+    },
+    {
+        "name": "Nicholas Latifi",
+        "wins": "6",
+        "poles": "2",
+        "points": "483",
+        "championships": "0",
+        "start_year": "2017",
+        "last_year": "2019",
+        "best_championship_position": "2"
+    },
+    {
+        "name": "Sergio Sette Camara",
+        "wins": "3",
+        "poles": "3",
+        "points": "415",
+        "championships": "0",
+        "start_year": "2017",
+        "last_year": "2019",
+        "best_championship_position": "4"
+    },
+    {
+        "name": "Jordan King",
+        "wins": "0",
+        "poles": "2",
+        "points": "141",
+        "championships": "0",
+        "start_year": "2017",
+        "last_year": "2019",
+        "best_championship_position": "9"
+    },
+    {
+        "name": "Anthoine Hubert",
+        "wins": "2",
+        "poles": "2",
+        "points": "77",
+        "championships": "0",
+        "start_year": "2019",
+        "last_year": "2019",
+        "best_championship_position": "10"
+    },
+    {
+        "name": "Dorian Boccolacci",
+        "wins": "0",
+        "poles": "0",
+        "points": "33",
+        "championships": "0",
+        "start_year": "2018",
+        "last_year": "2019",
+        "best_championship_position": "14"
+    },
+    {
+        "name": "Mahaveer Raghunathan",
+        "wins": "0",
+        "poles": "0",
+        "points": "1",
+        "championships": "0",
+        "start_year": "2019",
+        "last_year": "2019",
+        "best_championship_position": "20"
+    },
+    {
+        "name": "Arjun Maini",
+        "wins": "0",
+        "poles": "0",
+        "points": "24",
+        "championships": "0",
+        "start_year": "2018",
+        "last_year": "2019",
+        "best_championship_position": "16"
+    },
+    {
+        "name": "Matevos Isaakyan",
+        "wins": "0",
+        "poles": "0",
+        "points": "0",
+        "championships": "0",
+        "start_year": "2019",
+        "last_year": "2019",
+        "best_championship_position": "25"
+    },
+    {
+        "name": "Patricio Pato O'Ward",
+        "wins": "0",
+        "poles": "0",
+        "points": "0",
+        "championships": "0",
+        "start_year": "2019",
+        "last_year": "2019",
+        "best_championship_position": "26"
+    },
+    {
+        "name": "Ryan Tveter",
+        "wins": "0",
+        "poles": "0",
+        "points": "0",
+        "championships": "0",
+        "start_year": "2019",
+        "last_year": "2019",
+        "best_championship_position": "27"
+    },
+    {
+        "name": "George Russell",
+        "wins": "7",
+        "poles": "5",
+        "points": "287",
+        "championships": "1",
+        "start_year": "2018",
+        "last_year": "2018",
+        "best_championship_position": "1"
+    },
+    {
+        "name": "Lando Norris",
+        "wins": "1",
+        "poles": "1",
+        "points": "219",
+        "championships": "0",
+        "start_year": "2017",
+        "last_year": "2018",
+        "best_championship_position": "2"
+    },
+    {
+        "name": "Alexander Albon",
+        "wins": "4",
+        "poles": "4",
+        "points": "298",
+        "championships": "0",
+        "start_year": "2017",
+        "last_year": "2018",
+        "best_championship_position": "3"
+    },
+    {
+        "name": "Antonio Fuoco",
+        "wins": "3",
+        "poles": "1",
+        "points": "239",
+        "championships": "0",
+        "start_year": "2017",
+        "last_year": "2018",
+        "best_championship_position": "7"
+    },
+    {
+        "name": "Tadasuke Makino",
+        "wins": "1",
+        "poles": "1",
+        "points": "48",
+        "championships": "0",
+        "start_year": "2018",
+        "last_year": "2018",
+        "best_championship_position": "13"
+    },
+    {
+        "name": "Maximilian Gunther",
+        "wins": "1",
+        "poles": "2",
+        "points": "41",
+        "championships": "0",
+        "start_year": "2018",
+        "last_year": "2018",
+        "best_championship_position": "14"
+    },
+    {
+        "name": "Nirei Fukuzumi",
+        "wins": "0",
+        "poles": "1",
+        "points": "17",
+        "championships": "0",
+        "start_year": "2018",
+        "last_year": "2018",
+        "best_championship_position": "17"
+    },
+    {
+        "name": "Santino Ferrucci",
+        "wins": "0",
+        "poles": "0",
+        "points": "11",
+        "championships": "0",
+        "start_year": "2017",
+        "last_year": "2018",
+        "best_championship_position": "19"
+    },
+    {
+        "name": "Alessio Lorandi",
+        "wins": "0",
+        "poles": "0",
+        "points": "6",
+        "championships": "0",
+        "start_year": "2018",
+        "last_year": "2018",
+        "best_championship_position": "20"
+    },
+    {
+        "name": "Charles Leclerc",
+        "wins": "7",
+        "poles": "8",
+        "points": "282",
+        "championships": "1",
+        "start_year": "2017",
+        "last_year": "2017",
+        "best_championship_position": "1"
+    },
+    {
+        "name": "Oliver Rowland",
+        "wins": "2",
+        "poles": "1",
+        "points": "191",
+        "championships": "0",
+        "start_year": "2017",
+        "last_year": "2017",
+        "best_championship_position": "3"
+    },
+    {
+        "name": "Norman Nato",
+        "wins": "1",
+        "poles": "1",
+        "points": "91",
+        "championships": "0",
+        "start_year": "2017",
+        "last_year": "2017",
+        "best_championship_position": "9"
+    },
+    {
+        "name": "Gustav Malja",
+        "wins": "0",
+        "poles": "1",
+        "points": "44",
+        "championships": "0",
+        "start_year": "2017",
+        "last_year": "2017",
+        "best_championship_position": "13"
+    },
+    {
+        "name": "Sergio Canamasas",
+        "wins": "0",
+        "poles": "0",
+        "points": "21",
+        "championships": "0",
+        "start_year": "2017",
+        "last_year": "2017",
+        "best_championship_position": "14"
+    },
+    {
+        "name": "Johnny Cecotto Jr.",
+        "wins": "0",
+        "poles": "1",
+        "points": "16",
+        "championships": "0",
+        "start_year": "2017",
+        "last_year": "2017",
+        "best_championship_position": "16"
+    },
+    {
+        "name": "Sergey Sirotkin",
+        "wins": "0",
+        "poles": "0",
+        "points": "9",
+        "championships": "0",
+        "start_year": "2017",
+        "last_year": "2017",
+        "best_championship_position": "20"
+    },
+    {
+        "name": "Alex Palou",
+        "wins": "0",
+        "poles": "1",
+        "points": "5",
+        "championships": "0",
+        "start_year": "2017",
+        "last_year": "2017",
+        "best_championship_position": "21"
+    },
+    {
+        "name": "Nabil Jeffri",
+        "wins": "0",
+        "poles": "0",
+        "points": "2",
+        "championships": "0",
+        "start_year": "2017",
+        "last_year": "2017",
+        "best_championship_position": "23"
+    },
+    {
+        "name": "Robert Visoiu",
+        "wins": "0",
+        "poles": "0",
+        "points": "1",
+        "championships": "0",
+        "start_year": "2017",
+        "last_year": "2017",
+        "best_championship_position": "24"
+    },
+    {
+        "name": "Stefano Coletti",
+        "wins": "0",
+        "poles": "0",
+        "points": "0",
+        "championships": "0",
+        "start_year": "2017",
+        "last_year": "2017",
+        "best_championship_position": "27"
+    },
+    {
+        "name": "Rene Binder",
+        "wins": "0",
+        "poles": "0",
+        "points": "0",
+        "championships": "0",
+        "start_year": "2017",
+        "last_year": "2017",
+        "best_championship_position": "28"
+    },
+    {
+        "name": "Raffaele Marciello",
+        "wins": "0",
+        "poles": "0",
+        "points": "0",
+        "championships": "0",
+        "start_year": "2017",
+        "last_year": "2017",
+        "best_championship_position": "29"
+    }
+]

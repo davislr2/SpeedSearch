@@ -1,0 +1,63 @@
+/* Ensure the header has a lower z-index */
+.header {
+    z-index: 1;
+    position: relative;
+}
+
+/* Style the search bar container */
+.searchbar-container {
+    margin-top: 15px; /* Adjust the margin as needed */
+    padding: 10px;
+    z-index: 2; /* Ensure the search bar is above the header */
+    position: relative;
+}
+
+/* Style the search bar input */
+.searchbar-input {
+    width: 85%;
+    padding: 10px;
+    font-size: 16px;
+
+}
+
+.clear-button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.clear-button:hover {
+    background-color: #d32f2f;
+}
+
+/* Style the search results */
+.searchbar-results {
+    list-style-type: none;
+    padding: 40px, 40px, 40px, 40px;
+    margin: 0px;
+    margin-bottom: 20px;
+    max-width: 100%;
+    overflow: scroll;
+}
+
+.searchbar-results li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.error {
+    background-color: #ff2800;
+    padding: 10px;
+    color: white;
+}
+
+.error h3 {
+    color: white;
+}
+
+.champion-header {
+    color: gold;
+}
